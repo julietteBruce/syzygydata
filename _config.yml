@@ -1,7 +1,3 @@
 permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
-
 includes:
-- p1
-- p2
-- p3
