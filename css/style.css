@@ -154,4 +154,5 @@ This is used on all pages with a betti table.
 	border-spacing: 0;
     border-collapse: collapse;
 }
+
 .tableScroll{max-width:200px; overflow-x:scroll;}
