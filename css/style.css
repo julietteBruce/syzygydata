@@ -150,7 +150,7 @@ This is used on all pages with a betti table.
 /* 
 This is used on all pages with a betti table.
  */
-.betti-col{
+.betti-cols{
 	border-right: 1px solid #ddd;
 	font-weight:bold;
 	border-spacing: 0;
