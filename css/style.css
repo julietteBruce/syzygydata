@@ -121,7 +121,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
     border-collapse: collapse;
 }
 
-.betti tr td {
+.betti tr td a{
 	font-family: 'Merriweather', Georgia, Time;
 	padding: 10px;
 	text-align:center;
@@ -129,7 +129,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	text-decoration: none;
 }
 
-.betti tr th {
+.betti tr th a {
 	font-family: 'Merriweather', Georgia, Time;
 	padding: 10px;
 	text-align:center;
