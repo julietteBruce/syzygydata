@@ -204,5 +204,5 @@ This is used in the information boxes on all pages with a betti table.
 .card-outline-primary {
   border-color: #0275d8;
   border: 2px solid;
-  border-radius: 2px;
+  border-radius: 5px;
 }
