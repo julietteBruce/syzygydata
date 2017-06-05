@@ -115,9 +115,8 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 }
 
 .betti{
-	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather', Georgia, Time;
 	border-spacing: 0;
-	color: red !important;
     border-collapse: collapse;
 }
 
@@ -128,13 +127,14 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #DDD;
+    border: 0px solid #DDD;
 }
 
 /* 
 This is used on all pages with a betti table.
  */
 .betti tr td, a {
+	font-family: 'Merriweather', Georgia, Time;
 	padding: 10px;
 	text-align:center;
 	color: black;
@@ -144,7 +144,7 @@ This is used on all pages with a betti table.
 /* 
 This is used on all pages with a betti table.
  */
-.betti a:hover
+.betti a:hover {};
 
 /* 
 This is used on all pages with a betti table.
