@@ -25,13 +25,6 @@ summary {
   display: block;
 }
 
-.betti{
-	font-family: 'Merriweather', serif;
-	border-spacing: 0;
-	color: red;
-    border-collapse: collapse;
-}
-
 audio,
 canvas,
 video {

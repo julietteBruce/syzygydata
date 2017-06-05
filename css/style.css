@@ -117,7 +117,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 .betti{
 	font-family: 'Merriweather', serif;
 	border-spacing: 0;
-	color: red;
+	color: red !important;
     border-collapse: collapse;
 }
 
