@@ -163,6 +163,8 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 }
 
 .betti tr td a{
+	padding: 10px;
+	text-align:center;
 	color: black;
 	text-decoration: none;
 }
