@@ -202,3 +202,8 @@ This is used in the information boxes on all pages with a betti table.
   border-radius: 5px;
   padding: 10px;
 }
+
+.card-outline-primary {
+  border-color: #0275d8;
+}
+
