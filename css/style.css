@@ -197,12 +197,8 @@ This is used in the information boxes on all pages with a betti table.
 .overview{font-family: 'Merriweather', serif;}
 
 .card-fix {
-  border: 2px solid;
-  border-radius: 1px;
-}
-
-.card-outline-primary {
   border-color: #ddd;
   border: 2px solid;
   border-radius: 5px;
+  padding: 10px;
 }
