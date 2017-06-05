@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+.betti{
+	font-family: 'Merriweather', serif;
+	border-spacing: 0;
+	color: red !important;
+    border-collapse: collapse;
+}
+
 body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Georgia, Times; font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Merriweather', Georgia, Times; font-weight: 700;}
@@ -114,12 +121,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
   font-size: 90%;
 }
 
-.betti{
-	font-family: 'Merriweather', serif;
-	border-spacing: 0;
-	color: red !important;
-    border-collapse: collapse;
-}
+
 
 /* 
 This is used on all pages with a betti table.
