@@ -194,4 +194,8 @@ This is used in the information boxes on all pages with a betti table.
 	border-left: 1px solid #ddd;
 }
 
- 
+.overview{
+	font-family: 'Merriweather', Georgia, Time;
+	text-decoration: none;
+}
+
