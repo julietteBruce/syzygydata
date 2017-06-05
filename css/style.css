@@ -144,7 +144,7 @@ This is used on all pages with a betti table.
 /* 
 This is used on all pages with a betti table.
  */
-.betti a:hover {background-color: #bb3333}
+.betti a:hover
 
 /* 
 This is used on all pages with a betti table.
