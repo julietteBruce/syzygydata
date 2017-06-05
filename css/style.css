@@ -196,6 +196,9 @@ This is used in the information boxes on all pages with a betti table.
 
 .overview{ font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
 
+.card-fix {
+  border: 1px solid;
+}
 
 .card-outline-primary {
   border-color: #0275d8;
