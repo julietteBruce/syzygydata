@@ -121,18 +121,6 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
     border-collapse: collapse;
 }
 
-/* 
-.table-responsive {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 0px solid #DDD;
-}
-
 .betti tr td, a {
 	font-family: 'Merriweather', Georgia, Time;
 	padding: 10px;
@@ -147,6 +135,18 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	text-align:center;
 	color: black;
 	text-decoration: none;
+}
+
+/* 
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 0px solid #DDD;
 }
 
 
