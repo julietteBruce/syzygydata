@@ -194,10 +194,11 @@ This is used in the information boxes on all pages with a betti table.
 	border-left: 1px solid #ddd;
 }
 
-.overview{ font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
+.overview{font-family: 'Merriweather', serif;}
 
 .card-fix {
-  border: 1px solid;
+  border: 2px solid;
+  border-radius: 1px;
 }
 
 .card-outline-primary {
