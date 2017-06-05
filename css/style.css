@@ -114,9 +114,34 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
   font-size: 90%;
 }
 
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 0px solid #DDD;
+}
 
 .betti{
 	font-family: 'Merriweather', Georgia, Time;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.betti-cols{
+	border-right: 1px solid #ddd;
+	font-weight:bold;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.betti-top{
+	border-bottom: 1px solid #ddd;
+	font-weight:bold;
 	border-spacing: 0;
     border-collapse: collapse;
 }
@@ -137,33 +162,6 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	text-decoration: none;
 }
 
-/* 
-.table-responsive {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 0px solid #DDD;
-}
-
-
 .betti a:hover {background-color: #ddd;}
 
-.betti-cols{
-	border-right: 1px solid #ddd;
-	font-weight:bold;
-	border-spacing: 0;
-    border-collapse: collapse;
-}
-
-
-.betti-top{
-	border-bottom: 1px solid #ddd;
-	font-weight:bold;
-	border-spacing: 0;
-    border-collapse: collapse;
-}
- */
+ 
