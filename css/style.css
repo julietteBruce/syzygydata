@@ -194,8 +194,9 @@ This is used in the information boxes on all pages with a betti table.
 	border-left: 1px solid #ddd;
 }
 
-.overview{
-	font-family: 'Merriweather', Georgia, Time;
-	text-decoration: none;
-}
+.overview{ font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
 
+
+.card-outline-primary {
+  border-color: #0275d8;
+}
