@@ -117,6 +117,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 .betti{
 	font-family: 'Merriweather', serif;
 	border-spacing: 0;
+	color: red;
     border-collapse: collapse;
 }
 
@@ -155,7 +156,5 @@ This is used on all pages with a betti table.
     border-collapse: collapse;
 }
 
-.table{
-	color: red;
-}
+
 .tableScroll{width:200px,max-width:200px; overflow-x:scroll;}
