@@ -258,3 +258,10 @@ This is used in the information boxes on all pages with a betti table.
 
 .multi-schur a:hover {background-color: #ddd;}
 
+.popover-heading{
+	font-family: 'Merriweather', Georgia, Time;
+	}
+	
+.popover-body{
+	font-family: 'Merriweather', Georgia, Time;
+	}
