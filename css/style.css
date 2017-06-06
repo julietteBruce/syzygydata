@@ -245,6 +245,7 @@ This is used in the information boxes on all pages with a betti table.
 }
 
 .multi-schur tr td a{
+	font-family: 'Merriweather', Georgia, Time;
 	padding: 5px;
 	text-align:center;
 	color: black;
@@ -252,6 +253,9 @@ This is used in the information boxes on all pages with a betti table.
 }
 
 .multi-schur tr th a{
+	font-family: 'Merriweather', Georgia, Time;
+	padding: 5px;
+	text-align:center;
 	color: black;
 	text-decoration: none;
 }
