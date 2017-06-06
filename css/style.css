@@ -207,7 +207,54 @@ This is used in the information boxes on all pages with a betti table.
   border-color: #ddd;
 }
 
-.pop{
-tabindex="0" class="btn btn-xs btn-default" role="button" data-toggle="popover" data-trigger="focus"
+.multi-schur{
+	font-family: 'Merriweather', Georgia, Time;
+	border-spacing: 0;
+    border-collapse: collapse;
 }
+
+.betti-cols{
+	border-right: 1px solid #ddd;
+	font-weight:bold;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.betti-top{
+	border-bottom: 1px solid #ddd;
+	font-weight:bold;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.multi-schur tr td{
+	font-family: 'Merriweather', Georgia, Time;
+	padding: 5px;
+	text-align:center;
+	color: black;
+	text-decoration: none;
+}
+
+.multi-schur tr th{
+	font-family: 'Merriweather', Georgia, Time;
+	padding: 5px;
+	text-align:center;
+	color: black;
+	text-decoration: none;
+}
+
+.multi-schur tr td a{
+	padding: 5;
+	text-align:center;
+	color: black;
+	text-decoration: none;
+}
+
+.multi-schur tr th a{
+	color: black;
+	text-decoration: none;
+}
+
+.multi-schur a:hover {background-color: #ddd;}
 
