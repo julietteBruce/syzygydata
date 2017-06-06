@@ -124,12 +124,6 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 0px solid #DDD;
 }
-
-.panel panel-default {
-	width: 100%;
-    margin-bottom: 15px;
-    padding: 15px;
-    }
     
 .betti{
 	font-family: 'Merriweather', Georgia, Time;
