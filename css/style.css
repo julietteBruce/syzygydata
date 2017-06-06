@@ -211,7 +211,7 @@ This is used in the information boxes on all pages with a betti table.
 	font-family: 'Merriweather', Georgia, Time;
 	border-spacing: 0;
     border-collapse: collapse;
-    align="center"
+    align: center;
 }
 
 .betti-cols{
