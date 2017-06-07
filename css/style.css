@@ -240,7 +240,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	font-family: 'Merriweather', Georgia, Time;
 	}
 
-.betti-key{
+.panel-heading betti-key{
 	 font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal;
 }
 .betti-buttons{
