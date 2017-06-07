@@ -8,8 +8,8 @@ description: SyzygyData, a project about computing syzygies.
 	<p>
 	Fix \(n>0\) and let \(S=\textbf{k}[x_0,\ldots,x_n]\) be the standard graded polynomial ring. We denote
 	the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
-	\[ S(b;d)\coloneqq \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset, S\]
-	which we think of as an \(R=\Sym(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
+	\[ S(b;d):= \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset, S\]
+	which we think of as an \(R=\text{Sym}(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
 	sheaf \(\mathcal{O}_{\mathbb{P}^2}(b)\) by the \(d\)'uple embedding of \(\mathbb{P}^n\).
 	
 	The study of the Betti numbers of \(S(b;d)\) is in essence the study of \(\text{Tor}_{p}^{R}(S(b;d),\bf{k})\)
@@ -19,6 +19,10 @@ description: SyzygyData, a project about computing syzygies.
 	<b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
 	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\bf{k})_{p+q}.\]
 	Notice knowing these Koszul cohomology groups is equivalent to know the standard graded
-	Betti numbers since \(\dim K_{p,q}(S(b;d))\) is equal to \(\beta_{p,p+q}(S(b;d))\).
+	Betti numbers since \(\dim K_{p,q}(S(b;d))\) is equal to \(\beta_{p,p+q}(S(b;d))\). The (graded) 
+	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(S(b;d))\).
+	
+	W
+	
 	</p>
 </div>
