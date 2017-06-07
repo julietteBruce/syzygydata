@@ -9,8 +9,7 @@ description: SyzygyData, a project about computing syzygies.
 	Fix \(n>0\) and let \(S=\mathbb{C}[x_0,\ldots,x_n]\) be the standard graded polynomial ring. 
 	<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark-1">Rmk</a>
 
-	We denote
-	the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
+	We denote the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
 	\[ S(b;d):= \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset S\]
 	which we think of as an \(R=\text{Sym}(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
 	sheaf \(\mathcal{O}_{\mathbb{P}^2}(b)\) by the \(d\)'uple embedding of \(\mathbb{P}^n\).
@@ -38,8 +37,8 @@ description: SyzygyData, a project about computing syzygies.
 	it is often easier to work with the <b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
 	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\mathbb{C})_{p+q}.\]
 	Notice knowing these Koszul cohomology groups is equivalent to know the standard graded
-	Betti numbers since \(\dim K_{p,q}(n,d;b)\) is equal to \(\beta_{p,p+q}(n,d;b)\). The (graded) 
-	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(n,d;b)\).
+	Betti numbers since \(\dim K_{p,q}(n,b;d)\) is equal to \(\beta_{p,p+q}(n,b;d)\). The (graded) 
+	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(n,b;d)\).
 	<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark0">Rmk</a>
 
 				</p>
@@ -57,11 +56,12 @@ description: SyzygyData, a project about computing syzygies.
       			The polynomial ring \(S\) carries an action of the general linear group \(\textbf{GL}_{n+1}(\mathbb{C})\), which
       			in turns gives \(S\) a \(\mathbb{Z}^3\)-grading. <a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark1">Rmk</a>
       			We call this the <b>Schur grading</b> and it descends to \(\text{Tor}^{R}(S(b;d),\mathbb{C})\). Moreover, since this action is degree preserving this grading
-      			further descends to the Koszul cohomology groups. We call the resulting decomposition the <b>Schur decomposition</b> of \(K_{p,q}(n,d;b\).
+      			further descends to the Koszul cohomology groups. We call the resulting decomposition the <b>Schur decomposition</b> of \(K_{p,q}(n,b;d\).
       			Since the irreducible representations of \(\textbf{GL}_{n+1}(\mathbb{C})\) are given (up to isomorphisms) Schur functors,
-      			we can write the Schur decomposition of \(K_{p,q}(n,d;b)\) can be expressed as:
-      			\[K_{p,q}(n,d;b)=\bigoplus_{\lambda\in\mathbb{Z}^3}\textbf{S}_{\lambda}(\mathbb{C}^{n+1})^{\oplus m_{\lambda}},\]
+      			we can write the Schur decomposition of \(K_{p,q}(n,b;d)\) can be expressed as:
+      			\[K_{p,q}(n,b;d)=\bigoplus_{\lambda\in\mathbb{Z}^3}\textbf{S}_{\lambda}(\mathbb{C}^{n+1})^{\oplus \beta_{p,\lambda}(n,b;d)},\]
       			 where \(\textbf{S}_{\lambda}\) is a Schur functor and \(\lambda\) has weight \(d(p+q)+b\). <a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark2">Rmk</a>
+				We call the \(\beta_{p,\lambda}(n,b;d)\) the <b> Schur graded Betti numbers of \(S(b;d)\).
 				</p>
       		</div>
     		</div>
@@ -77,10 +77,10 @@ description: SyzygyData, a project about computing syzygies.
       			by letting \(\text{deg}(x_i)=\textbf{e}_i\) where \(\textbf{e}_0,\ldots,\textbf{e}_n\)\) is the standard basis 
       			or by specializing the \(\textbf{GL}_{n+1}(\mathbb{C})\) action to an action of \((\mathbb{C}^*)^{n+1}\). From this
       			second description we immediately see that this act also descends to the Koszul cohomology groups:
-      			\[K_{p,q}(n,b;d)=\bigoplus_{\textbf{a}\in\mathbb{Z}^{n+1}}\textbf{k}(\textbf{a})^{\oplus\beta_{p,\textbf{a}}(d;b)},\]
+      			\[K_{p,q}(n,b;d)=\bigoplus_{\textbf{a}\in\mathbb{Z}^{n+1}}\textbf{k}(\textbf{a})^{\oplus\beta_{p,\textbf{a}}(b;d)},\]
       			where \(\textbf{k}(\textbf{a})\) is the \((\mathbb{C}^*)^{n+1}\)-representation given by 
       			\((z_0,\cdots,z_{n+1})\cdot w=(z_0^{a_0}\cdots z_{n+1}^{a_{n+1}})w.\) We call this the <b>muligraded decomposition</b>
-      			of \(K_{p,q}(n,d;b)\) and call the \(\beta_{p,\textbf{a}}(n,d;d)\) the <b>multigraded Betti numbers</b>.
+      			of \(K_{p,q}(n,b;d)\) and call the \(\beta_{p,\textbf{a}}(n,d;d)\) the <b>multigraded Betti numbers</b>.
       			<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark3">Rmk</a>
 				</p>
       		</div>
@@ -88,7 +88,15 @@ description: SyzygyData, a project about computing syzygies.
   		</div>
 	</div>
 
-
+	<p>Before moving on note that the multigraded Betti numbers determine both the standard and Schur graded Betti numbers. For example, 
+	we can recover the standard graded Betti numbers from the multigraded via the following formula:
+	\[
+	\beta_{p,q}(n,b;d)=\sum_{|\textbf{a}|=d(p+q)+b}\beta_{p,\textbf{a}}(n,b;d).
+	\]
+	Recovering the Schur graded Betti numbers is slightly more complicated, but an algorithm for doing so can be found in the
+	accompanying paper. 
+	
+	
 <div id="remark-1" class="hidden">
 	<div class="popover-body">
 		<p>Note essentially all of what follows holds over any algebraically closed field of characteristic. Our choice
@@ -98,8 +106,8 @@ description: SyzygyData, a project about computing syzygies.
 
 <div id="remark0" class="hidden">
 	<div class="popover-body">
-		<p>For notational hygiene we also often write \(K_{p,q}(n,d;b)\) for \(K_{p,q}(S(b;d))\), and likewise write
-	\(\beta_{p,q}(n,d;b)\) for \(\beta_{p,q}(S(b;d))\).</p>
+		<p>For notational hygiene we also often write \(K_{p,q}(n,b;d)\) for \(K_{p,q}(S(b;d))\), and likewise write
+	\(\beta_{p,q}(n,b;d)\) for \(\beta_{p,q}(S(b;d))\).</p>
 	</div>
 </div>
 
@@ -120,7 +128,7 @@ description: SyzygyData, a project about computing syzygies.
 
 <div id="remark3" class="hidden">
 	<div class="popover-body">
-		<p>Notice that if \(\beta_{p,\textbf{a}}(n,d;b)\neq0\) then \(\textbf{a}\) must have
+		<p>Notice that if \(\beta_{p,\textbf{a}}(n,b;d)\neq0\) then \(\textbf{a}\) must have
 		weight \(d(p+q)+b\).</p>
 	</div>
 </div>
