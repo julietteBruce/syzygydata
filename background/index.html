@@ -6,7 +6,10 @@ description: SyzygyData, a project about computing syzygies.
 <div class="container-fluid">
 
 	<p>
-	Fix \(n>0\) and let \(S=\mathbb{C}[x_0,\ldots,x_n]\) be the standard graded polynomial ring. We denote
+	Fix \(n>0\) and let \(S=\mathbb{C}[x_0,\ldots,x_n]\) be the standard graded polynomial ring. 
+	<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark-1">Rmk</a>
+
+	We denote
 	the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
 	\[ S(b;d):= \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset S\]
 	which we think of as an \(R=\text{Sym}(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
@@ -86,10 +89,17 @@ description: SyzygyData, a project about computing syzygies.
 	</div>
 
 
+<div id="remark-1" class="hidden">
+	<div class="popover-body">
+		<p>Note essentially all of what follows holds over any algebraically closed field of characteristic. Our choice
+		of working ovr \(\mathbb{C}\) is simply one of connivence. </p>
+	</div>
+</div>
+
 <div id="remark0" class="hidden">
 	<div class="popover-body">
 		<p>For notational hygiene we also often write \(K_{p,q}(n,d;b)\) for \(K_{p,q}(S(b;d))\), and likewise write
-	\(\beta_{p,q}(n,d;b)\) for \(\beta_{p,q}(S(b;d))\)</p>
+	\(\beta_{p,q}(n,d;b)\) for \(\beta_{p,q}(S(b;d))\).</p>
 	</div>
 </div>
 
