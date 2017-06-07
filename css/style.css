@@ -176,37 +176,6 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 
 .betti a:hover {background-color: #ddd;}
 
-.quickview-table{
-	font-family: 'Merriweather', serif;
-	border-spacing: 0;
-    border-collapse: collapse;
-}
-
-/* 
-This is used in the information boxes on all pages with a betti table.
- */
-.quickview-table tr td {
-	padding: 5px;
-	text-align:center;
-	border-bottom: 1px solid #ddd;
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-left: 1px solid #ddd;
-}
-
-.overview{font-family: 'Merriweather', serif;}
-
-.card-fix {
-  border-color: #ddd;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.card-outline-primary {
-  border-color: #ddd;
-}
-
 .multi-schur{
 	font-family: 'Merriweather', Georgia, Time;
 	border-spacing: 0;
@@ -270,3 +239,37 @@ This is used in the information boxes on all pages with a betti table.
 .popover-body{
 	font-family: 'Merriweather', Georgia, Time;
 	}
+
+.panel-heading {
+	font-family: 'Merriweather', Georgia, Time;
+}
+.card-fix {
+  border-color: #ddd;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-outline-primary {
+  border-color: #ddd;
+}
+
+/* 
+THESE ARE LIKELY NOT USED. DELETE THEM EVENTUALLY 
+.quickview-table{
+	font-family: 'Merriweather', serif;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.quickview-table tr td {
+	padding: 5px;
+	text-align:center;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+
+.overview{font-family: 'Merriweather', serif;}
+ */
