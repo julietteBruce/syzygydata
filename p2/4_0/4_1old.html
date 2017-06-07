@@ -1,13 +1,31 @@
 ---
 layout: default
-title: P2/4-0/4-1
-description: Entry page from a betti table on SyzygyData
+cv: passive
+notes: passive
+contact: passive
+description: Syzygy Database
 ---
 
 <div class="container">
 
 <div class="col-md-6">
-<div class="panel panel-default">	<div class="panel-heading betti-key">Current Betti Table Entry:</div>	<div class="panel-body">		<div class="row text-center">			<div class="col-xs-4"><h4>\(n=2\)</h4></div>			<div class="col-xs-4"><h4>\(d=4\)</h4></div>			<div class="col-xs-4"><h4>\(b=0\)</h4></div>		</div>		<div class="row text-center">			<div class="col-xs-4"><h4>\(p=4\)</h4></div>			<div class="col-xs-4"><h4>\(q=1\)</h4></div>		</div>	</div>	</div></div></div>
+
+<div class="panel panel-default">
+  <div class="panel-heading betti-key">Current Betti Table Entry:</div>
+  <div class="panel-body">
+		<div class="row text-center">
+                <div class="col-xs-4"><h4>\(n=2\)</h4></div>
+                <div class="col-xs-4"><h4>\(d=4\)</h4></div>
+                <div class="col-xs-4"><h4>\(b=0\)</h4></div>
+            </div>
+            <div class="row text-center">
+  				<div class="col-xs-6"><h4>\(p=4\)</h4></div>
+  				<div class="col-xs-6"><h4>\(q=1\)</h4></div>
+			</div>
+  </div>
+</div>
+</div>
+
 
 
 {% include_relative betti.html %}
@@ -25,23 +43,24 @@ description: Entry page from a betti table on SyzygyData
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Schur Decomposition</a>
 			</h4>			</div>
 
-			<div id="collapse1" class="panel-collapse collapse in">
+			<div id="collapse1" class="panel-collapse collapse">
 			<div class="panel-body">
-			<div class="table-responsive">
+			<p>Click on an entry for more information! The dominate weights are displayed in green.</p>
 
+			<div class="table-responsive">
 			<table class="table-condensed mutli-schur">
 				<thead>
 				<tr class="betti-top">
 					<th class="betti-cols"></th>
-					<th class="betti-cols">6</th>
-					<th class="betti-cols">7</th>
-					<th class="betti-cols">8</th>
-					<th class="betti-cols">9</th>
-					<th class="betti-cols">10</th>
-					<th class="betti-cols">11</th>
-					<th class="betti-cols">12</th>
-					<th class="betti-cols">13</th>
-					<th class="betti-cols">14</th>
+					<th >6</th>
+					<th >7</th>
+					<th >8</th>
+					<th >9</th>
+					<th >10</th>
+					<th >11</th>
+					<th >12</th>
+					<th >13</th>
+					<th >14</th>
 				</tr>
 				</thead>
 
@@ -66,7 +85,7 @@ description: Entry page from a betti table on SyzygyData
 					<td>&middot;</td>
 					<td>&middot;</td>
 					<td>&middot;</td>
-					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-12-4-4">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-success"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-12-4-4">1</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-13-4-3">1</a>
 					<td>&middot;</td>
 				</tr>
@@ -80,7 +99,7 @@ description: Entry page from a betti table on SyzygyData
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-10-5-5">2</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-11-5-4">3</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-12-5-3">2</a>
-					<td><a tabindex="0" class="btn btn-xs btn-sucess"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-13-5-2">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-13-5-2">1</a>
 					<td>&middot;</td>
 				</tr>
 
@@ -105,7 +124,7 @@ description: Entry page from a betti table on SyzygyData
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-9-7-4">5</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-10-7-3">5</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-11-7-2">3</a>
-					<td><a tabindex="0" class="btn btn-xs btn-sucess"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-12-7-1">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-12-7-1">1</a>
 					<td>&middot;</td>
 					<td>&middot;</td>
 				</tr>
@@ -164,11 +183,13 @@ description: Entry page from a betti table on SyzygyData
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Multigraded Decomposition</a>
 			</h4>			</div>
 
-			<div id="collapse2" class="panel-collapse collapse in">
+			<div id="collapse2" class="panel-collapse collapse">
 			<div class="panel-body">
+			<p>Click on an entry for more information!</p>
+
 			<div class="table-responsive">
 
-			<table class="table-condensed mutli-schur">
+			<table align="center" class="table-condensed mutli-schur">
 				<thead>
 				<tr class="betti-top">
 					<th class="betti-cols"></th>
