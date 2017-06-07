@@ -6,7 +6,7 @@ description: SyzygyData, a project about computing syzygies.
 <div class="container-fluid">
 
 	<p>
-	Fix \(n>0\) and let \(S=\textbf{k}[x_0,\ldots,x_n]\) be the standard graded polynomial ring. We denote
+	Fix \(n>0\) and let \(S=\mathbb{C}[x_0,\ldots,x_n]\) be the standard graded polynomial ring. We denote
 	the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
 	\[ S(b;d):= \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset S\]
 	which we think of as an \(R=\text{Sym}(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
@@ -14,7 +14,7 @@ description: SyzygyData, a project about computing syzygies.
 	</p>
 	
 	</p>
-	Understanding the Betti numbers of \(S(b;d)\) amounts, in essence, to understanding \(\text{Tor}_{p}^{R}(S(b;d),\textbf{k})\)
+	Understanding the Betti numbers of \(S(b;d)\) amounts, in essence, to understanding \(\text{Tor}_{p}^{R}(S(b;d),\mathbb{C})\)
 	as a graded \(R\)-module. Usually by "graded" one means the \(\mathbb{Z}\) these \(\text{Tor}\) modules inherit from the 
 	standard grading on \(S\). However, in our work there turns out to be three different, although related, gradings we find it
 	fruitful to consider. We briefly describe each below:
@@ -28,15 +28,17 @@ description: SyzygyData, a project about computing syzygies.
     		<div id="collapse1" class="panel-collapse collapse">
       		<div class="panel-body">
       			<p>
-	As mentioned above \(\text{Tor}^R(S(b;d),\textbf{k})\) inherits a natural \(\mathbb{Z}\)-grading from the
+	As mentioned above \(\text{Tor}^R(S(b;d),\mathbb{C})\) inherits a natural \(\mathbb{Z}\)-grading from the
 	standard grading on \(S\). This gives rise to the<b>standard graded Betti number</b> of \(S(b;d)\) which one may define by:
-	\[\beta_{p,q}(S(b;d)):=\dim_{\bf{k}}\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{q}.\]
+	\[\beta_{p,q}(S(b;d)):=\dim_{\mathbb{C}}\text{Tor}_{p}^{R}(S(b;d),\mathbb{C})_{q}.\]
 	Note while this notation is quite standard, for easy of notation as well as other applications 
 	it is often easier to work with the <b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
-	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{p+q}.\]
+	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\mathbb{C})_{p+q}.\]
 	Notice knowing these Koszul cohomology groups is equivalent to know the standard graded
-	Betti numbers since \(\dim K_{p,q}(S(b;d))\) is equal to \(\beta_{p,p+q}(S(b;d))\). The (graded) 
-	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(S(b;d))\).
+	Betti numbers since \(\dim K_{p,q}(n,d;b)\) is equal to \(\beta_{p,p+q}(n,d;b)\). The (graded) 
+	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(n,d;b)\).
+	<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark0">Rmk</a>
+
 				</p>
       		</div>
     		</div>
@@ -49,13 +51,13 @@ description: SyzygyData, a project about computing syzygies.
     		<div id="collapse2" class="panel-collapse collapse">
       		<div class="panel-body">
       			<p>
-      			The polynomial ring \(S\) carries an action of the general linear group \(\textbf{GL}_{n+1}(\textbf{k})\), which
+      			The polynomial ring \(S\) carries an action of the general linear group \(\textbf{GL}_{n+1}(\mathbb{C})\), which
       			in turns gives \(S\) a \(\mathbb{Z}^3\)-grading. <a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark1">Rmk</a>
-      			We call this the <b>Schur grading</b> and it descends to \(\text{Tor}^{R}(S(b;d),\textbf{k})\). Moreover, since this action is degree preserving this grading
-      			further descends to the Koszul cohomology groups. We call the resulting decomposition the <b>Schur decomposition</b> of \(K_{p,q}(S(b;d)\).
+      			We call this the <b>Schur grading</b> and it descends to \(\text{Tor}^{R}(S(b;d),\mathbb{C})\). Moreover, since this action is degree preserving this grading
+      			further descends to the Koszul cohomology groups. We call the resulting decomposition the <b>Schur decomposition</b> of \(K_{p,q}(n,d;b\).
       			Since the irreducible representations of \(\textbf{GL}_{n+1}(\textbf{k})\) are given (up to isomorphisms) Schur functors,
-      			we can write the Schur decomposition of \(K_{p,q}(S(b;d))\) can be expressed as:
-      			\[K_{p,q}(S(b;d))=\bigoplus_{\lambda\in\mathbb{Z}^3}\textbf{S}_{\lambda}(\textbf{k}^{n+1})^{\oplus m_{\lambda}},\]
+      			we can write the Schur decomposition of \(K_{p,q}(n,d;b\) can be expressed as:
+      			\[K_{p,q}(n,d;b)=\bigoplus_{\lambda\in\mathbb{Z}^3}\textbf{S}_{\lambda}(\textbf{k}^{n+1})^{\oplus m_{\lambda}},\]
       			 where \(\textbf{S}_{\lambda}\) is a Schur functor and \(\lambda\) has weight \(d(p+q)+b\). <a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark2">Rmk</a>
 				</p>
       		</div>
@@ -64,20 +66,19 @@ description: SyzygyData, a project about computing syzygies.
   		
   		<div class="panel panel-default">
     		<div class="panel-heading">
-      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Multigraded Decomposition</a></h4>
+      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Multigraded Decomposition</a></h4>
     		</div>
     		<div id="collapse1" class="panel-collapse collapse">
       		<div class="panel-body">
-      			<p>
-	As mentioned above \(\text{Tor}^R(S(b;d),\textbf{k})\) inherits a natural \(\mathbb{Z}\)-grading from the
-	standard grading on \(S\). This gives rise to the<b>standard graded Betti number</b> of \(S(b;d)\) which one may define by:
-	\[\beta_{p,q}(S(b;d)):=\dim_{\bf{k}}\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{q}.\]
-	Note while this notation is quite standard, for easy of notation as well as other applications 
-	it is often easier to work with the <b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
-	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{p+q}.\]
-	Notice knowing these Koszul cohomology groups is equivalent to know the standard graded
-	Betti numbers since \(\dim K_{p,q}(S(b;d))\) is equal to \(\beta_{p,p+q}(S(b;d))\). The (graded) 
-	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(S(b;d))\).
+      			<p>The final grading we will make use of is the \(\mathbb{Z}^{n+1}\)-multigrading on \(S\) that arrises either
+      			by letting \(\text{deg}(x_i)=\textbf{e}_i\) where \(\textbf{e}_0,\ldots,\textbf{e}_n\)\) is the standard basis 
+      			or by specializing the \(\textbf{GL}_{n+1}(\mathbb{C})\) action to an action of \((\mathbb{C}^*)^{n+1}\). From this
+      			second description we immediately see that this act also descends to the Koszul cohomology groups:
+      			\[K_{p,q}(n,b;d)=\bigoplus_{\textbf{a}\in\mathbb{Z}^{n+1}}\textbf{k}(\textbf{a})^{\oplus\beta_{p,\textbf{a}}(d;b)},\]
+      			where \(\textbf{k}(\textbf{a})\) is the \((\mathbb{C}^*)^{n+1}\)-representation given by 
+      			\((z_0,\cdots,z_{n+1})\cdot w=(z_0^{a_0}\cdots z_{n+1}^{a_{n+1}})w.\) We call this the <b>muligraded decomposition</b>
+      			of \(K_{p,q}(n,d;b)\) and call the \(\beta_{p,\textbf{a}}(n,d;d)\) the <b>multigraded Betti numbers</b>.
+      			<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark3">Rmk</a>
 				</p>
       		</div>
     		</div>
@@ -85,21 +86,35 @@ description: SyzygyData, a project about computing syzygies.
 	</div>
 
 
-
+<div id="remark0" class="hidden">
+	<div class="popover-body">
+		<p>For notational hygiene we also often write \(K_{p,q}(n,d;b)\) for \(K_{p,q}(S(b;d))\), and likewise write
+	\(\beta_{p,q}(n,d;b)\) for \(\beta_{p,q}(S(b;d))\)</p>
+	</div>
+</div>
 
 <div id="remark1" class="hidden">
 	<div class="popover-body">
 		<p>Recall that we can think of a grading of a ring/module as a decomposition into irreducible 
 		representations arising from some group action. For example, the standard grading on \(S\) 
-		can be thought of coming from the natural \(\textbf{k}^\times\).
+		can be thought of coming from the natural \(\textbf{k}^*\).</p>
 	</div>
 </div>
 
 <div id="remark2" class="hidden">
 	<div class="popover-body">
 		<p>Recall the weight of an element \(\lambda\in \mathbb{Z}^{n+1}\) is defined to be \(|\lambda|=\lambda_0+\lambda_1+\cdots+
-		\lambda_n\).
+		\lambda_n\).</p>
 	</div>
 </div>
+
+<div id="remark3" class="hidden">
+	<div class="popover-body">
+		<p>Notice that if \(\beta_{p,\textbf{a}}(n,d;b)\neq0\) then \(\textbf{a}\) must have
+		weight \(d(p+q)+b\).</p>
+	</div>
+</div>
+
+
 
 </div>
