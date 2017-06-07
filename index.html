@@ -12,17 +12,20 @@ description: Syzygy Database
  -->
 
 	<p>A central open question in the study of syzygies is to describe the Betti
-		table of \(\bf{P}^{n}\) under the degree \(d\) Veronese embedding. This
-		is fully understood for the case of a projective line, but even for a
-		projective plane a full description is unknown. The syzygies of these 
-		higher dimension Veronese embeddings are difficult to compute as the
+		table of \(\mathbb{P}^{n}\) under the degree \(d\) Veronese embedding. While
+		the case when \(n=1\) is fully understood and classical &mdash; the minimal resolution is 
+		given by an Eagon-Northcott complex &mdash; in higher dimensions this problem is quite wide
+		open. For example, when \(n=2\) not only is a complete description not known, but only a handful
+		of examples have ever been computed.
+		</br>
+		</br>
+		Such computations are made difficult for higher dimensional Veronese embeddings because the
 		number of variables begins to grow rapidly in \(d\). For example,
-		with the projective the number of variables grows quadratically
+		with the projective plane the number of variables grows quadratically
 		with d. This ratchets up the computational complexity of this question quite quickly. For
-		instance, when \(d\) is at most 3, one can compute the entire Betti table
-		with paper and pencil; when \(d\) is 4, Macaulay2 competes the Betti table
-		in about 30 seconds. Yet even when \(d\) is 5, our computation in Macaulay2
-		fails to terminate.
+		instance, when \(n=2\) and \(d\leq 3\), one can compute the entire Betti table
+		with paper and pencil; when \(d\) is 4, Macaulay2 is capable of computing the Betti table
+		in around 30 seconds. Yet even when \(d=5\) Macaulay2 fails to terminate.
 		</br>
 		</br>
 		<p class="lead">The goal of this project is to use numerical linear algebra and high speed
