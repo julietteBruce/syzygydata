@@ -10,6 +10,15 @@ description: SyzygyData, a project about computing syzygies.
 	the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
 	\[ S(b;d)\coloneqq \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset, S\]
 	which we think of as an \(R=\Sym(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
-	sheaf \(\mathcal{O}_{\mathbb{P}^2}(b)\) by the \(d\)'uple embedding of \(\mathbb{P}^n\). 
+	sheaf \(\mathcal{O}_{\mathbb{P}^2}(b)\) by the \(d\)'uple embedding of \(\mathbb{P}^n\).
+	
+	The study of the Betti numbers of \(S(b;d)\) is in essence the study of \(\text{Tor}_{p}^{R}(S(b;d),\bf{k})\)
+	as a graded \(R\)-module. In particular, the <b>standard graded Betti number</b> of \(S(b;d)\) are:
+	\[\beta_{p,q}(S(b;d))=\dim_{\bf{k}}\text{Tor}_{p}^{R}(S(b;d),\bf{k})_{q}.\]
+	However, for easy of notation as well as other applications it is often easier to work with the 
+	<b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
+	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\bf{k})_{p+q}.\]
+	Notice knowing these Koszul cohomology groups is equivalent to know the standard graded
+	Betti numbers since \(\dim K_{p,q}(S(b;d))\) is equal to \(\beta_{p,p+q}(S(b;d))\).
 	</p>
 </div>
