@@ -8,21 +8,90 @@ description: SyzygyData, a project about computing syzygies.
 	<p>
 	Fix \(n>0\) and let \(S=\textbf{k}[x_0,\ldots,x_n]\) be the standard graded polynomial ring. We denote
 	the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
-	\[ S(b;d):= \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset, S\]
+	\[ S(b;d):= \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset S\]
 	which we think of as an \(R=\text{Sym}(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
 	sheaf \(\mathcal{O}_{\mathbb{P}^2}(b)\) by the \(d\)'uple embedding of \(\mathbb{P}^n\).
+	</p>
 	
-	The study of the Betti numbers of \(S(b;d)\) is in essence the study of \(\text{Tor}_{p}^{R}(S(b;d),\bf{k})\)
-	as a graded \(R\)-module. In particular, the <b>standard graded Betti number</b> of \(S(b;d)\) are:
-	\[\beta_{p,q}(S(b;d))=\dim_{\bf{k}}\text{Tor}_{p}^{R}(S(b;d),\bf{k})_{q}.\]
-	However, for easy of notation as well as other applications it is often easier to work with the 
-	<b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
-	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\bf{k})_{p+q}.\]
+	</p>
+	Understanding the Betti numbers of \(S(b;d)\) amounts, in essence, to understanding \(\text{Tor}_{p}^{R}(S(b;d),\textbf{k})\)
+	as a graded \(R\)-module. Usually by "graded" one means the \(\mathbb{Z}\) these \(\text{Tor}\) modules inherit from the 
+	standard grading on \(S\). However, in our work there turns out to be three different, although related, gradings we find it
+	fruitful to consider. We briefly describe each below:
+	</p>
+	
+	<div class="panel-group" id="accordion">
+  		<div class="panel panel-default">
+    		<div class="panel-heading">
+      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Standard Decomposition</a></h4>
+    		</div>
+    		<div id="collapse1" class="panel-collapse collapse in">
+      		<div class="panel-body">
+      			<p>
+	As mentioned above \(\text{Tor}^R(S(b;d),\textbf{k})\) inherits a natural \(\mathbb{Z}\)-grading from the
+	standard grading on \(S\). This gives rise to the<b>standard graded Betti number</b> of \(S(b;d)\) which one may define by:
+	\[\beta_{p,q}(S(b;d)):=\dim_{\bf{k}}\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{q}.\]
+	Note while this notation is quite standard, for easy of notation as well as other applications 
+	it is often easier to work with the <b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
+	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{p+q}.\]
 	Notice knowing these Koszul cohomology groups is equivalent to know the standard graded
 	Betti numbers since \(\dim K_{p,q}(S(b;d))\) is equal to \(\beta_{p,p+q}(S(b;d))\). The (graded) 
 	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(S(b;d))\).
-	
-	W
-	
-	</p>
+				</p>
+      		</div>
+    		</div>
+  		</div>
+  		
+  		<div class="panel panel-default">
+    		<div class="panel-heading">
+      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Schur Decomposition</a></h4>
+    		</div>
+    		<div id="collapse2" class="panel-collapse collapse in">
+      		<div class="panel-body">
+      			<p>
+      			The polynomial ring \(S\) carries an action of the general linear group \(\textbf{GL}_{n+1}(\textbf{k})\), which
+      			in turns gives \(S\) a \(\mathbb{Z}^3\)-grading. <a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark1">(Remark)</a>
+      			This grading descends to \(\Tor^{R}(S(b;d),\textbf{k})\). Moreover, since this action is degree preserving this grading
+      			further descends to the Koszul cohomology groups. We call the resulting decomposition, which may be written as:
+      			\[K_{p,q}(S(b;d))=\bigoplus_{\lambda\in\mathbb{Z}^3}\textbf{S}_{\lambda}(\textbf{k}^{n+1})^{\oplus m_{\lambda}}\]
+      			 where \(\textbf{S}_{\lambda}\) is a Schur functor, the <b>Koszul decomposition</b> of \(K_{p,q}(S(b;d)\).
+				</p>
+      		</div>
+    		</div>
+  		</div>
+  		
+  		<div class="panel panel-default">
+    		<div class="panel-heading">
+      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Multigraded Decomposition</a></h4>
+    		</div>
+    		<div id="collapse1" class="panel-collapse collapse in">
+      		<div class="panel-body">
+      			<p>
+	As mentioned above \(\text{Tor}^R(S(b;d),\textbf{k})\) inherits a natural \(\mathbb{Z}\)-grading from the
+	standard grading on \(S\). This gives rise to the<b>standard graded Betti number</b> of \(S(b;d)\) which one may define by:
+	\[\beta_{p,q}(S(b;d)):=\dim_{\bf{k}}\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{q}.\]
+	Note while this notation is quite standard, for easy of notation as well as other applications 
+	it is often easier to work with the <b> Koszul cohomology groups</b> of \(S(b;d)\), which are defined to be:
+	\[K_{p,q}(S(b;d))=\text{Tor}_{p}^{R}(S(b;d),\textbf{k})_{p+q}.\]
+	Notice knowing these Koszul cohomology groups is equivalent to know the standard graded
+	Betti numbers since \(\dim K_{p,q}(S(b;d))\) is equal to \(\beta_{p,p+q}(S(b;d))\). The (graded) 
+	<b> Betti table</b> of \(S(b;d)\) is the matrix who's \((p,q)\) entry is \(\dim K_{p,q}(S(b;d))\).
+				</p>
+      		</div>
+    		</div>
+  		</div>
+	</div>
+
+
+
+
+<div id="remark1" class="hidden">
+	<div class="popover-body">
+		<p>Recall that we can think of a grading of a ring/module as a decomposition into irreducible 
+		representations arising from some group action. For example, the standard grading on \(S\) 
+		can be thought of coming from the natural \(\textbf{k}^\times\).
+	</div>
+</div>
+
+
 </div>
