@@ -1,13 +1,9 @@
 ---
 layout: default
-<!-- title: jmcglone.com -->
 title: SyzygyData
 description: SyzygyData, a project about computing syzygies.
 ---
 <div class="container-fluid">
-<!-- 
-<img  class="img-rounded img-responsive" alt="M2@Boise" src="../img/chihuly_wires.jpg">
- -->
 
 	<p>A central open question in the study of syzygies is to describe the Betti
 		table of \(\mathbb{P}^{n}\) under the degree \(d\) Veronese embedding. While
@@ -33,26 +29,12 @@ description: SyzygyData, a project about computing syzygies.
 		So to achieve our goal we approach the task of computing Betti numbers is a somewhat
 		novel fashion. First we take the task of computing Betti tables and break it in a way that
 		boils down to computing the ranks of a large number of matrices. This in itself is not new, 
-		and the resulting problem is still quite daunting. 
+		and the resulting problem is still quite daunting. (See the <a href="{{site.baseurl}}/background">Background</a> page for a more complete description.)
 		</br>
 		</br>
 		Second we create a framework to systematically perform such computations making use of high 
 		speed distributed computing and highly efficient sparse matrix algorithms. In large part the 
-		novelty of this project lies in this execution. 
-		
-		In particular, instead of working symbolically to compute a minimal free resolution
-		we use numerical linear algebra to compute the homology of a 
-		computing the Betti numbers directly we compute a finer invariant:
-		the multigraded Betti numbers. From these we are then able to recover both the standard graded Betti numbers, 
-		but also the associated Schur functions. The advantage to this approach is twofold:
-		<ul>
-			<li> First, it moves us from a symbolic algebra to a linear algebra problem, and this allows us to capitalize on some of the incredible technology from numerical linear algebra. </li>
-			<li> Second, it breaks the necessary computations up into smaller pieces making it ideal for parallelized and high throughput computing.  </li>
-		</ul>
-		Currently, we combine sparse, numerical linear
-		algebra (via QR and LU factorization algorithms) with high throughput, and high
-		performance computing (via HTCondor) to implement this method effectively. (See 
-		<a href="{{site.baseurl}}/approach">Our Approach</a> page for a more in-depth description of our methodology.)
+		novelty of this project lies in this execution. (See the <a href="{{site.baseurl}}/approach">Our Approach</a> page for a more in-depth description of our methodology.)
 		</br>
 		</br>
 		While others [1] have recently implemented similar ideas regarding the computation of graded Betti numbers, our approach has a few additional benefits,
@@ -69,4 +51,3 @@ description: SyzygyData, a project about computing syzygies.
 		
 	
 </div>
-<!-- </div> -->
