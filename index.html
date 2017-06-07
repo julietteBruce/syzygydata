@@ -23,7 +23,9 @@ description: Syzygy Database
 		tables of Veronese embeddings of \(\mathbb{P}^n\).
 		</p>
 
-		Such computations are made difficult because the number of variables grows rapidly in \(d\). For example,
+		Such computations are made difficult because the number of variables grows on the order of \(O(d^{n})\). 
+		This means the computational complexity ratchets up quite dramatically
+		are well highlight by the case when \(n=2\). For example,
 		with the projective plane the number of variables grows quadratically
 		with d. This ratchets up the computational complexity of this question quite quickly. For
 		instance, when \(n=2\) and \(d\leq 3\), one can compute the entire Betti table
@@ -31,10 +33,19 @@ description: Syzygy Database
 		in around 30 seconds. Yet even when \(d=5\) Macaulay2 fails to terminate.
 		</br>
 		</br>
+		So to achieve our goal we approach the task of computing Betti numbers is a somewhat
+		novel fashion. First we take the task of computing Betti tables and break it in a way that
+		boils down to computing the ranks of a large number of matrices. This in itself is not new, 
+		and the resulting problem is still quite daunting. 
+		</br>
+		</br>
+		Second we create a framework to systematically perform such computations making use of high 
+		speed distributed computing and highly efficient sparse matrix algorithms. In large part the 
+		novelty of this project lies in this execution. 
 		
-		
-		To achieve this goal we approach the task of computing the Betti numbers is a somewhat
-		novel way. In particular, instead of computing the Betti numbers directly we compute a finer invariant:
+		In particular, instead of working symbolically to compute a minimal free resolution
+		we use numerical linear algebra to compute the homology of a 
+		computing the Betti numbers directly we compute a finer invariant:
 		the multigraded Betti numbers. From these we are then able to recover both the standard graded Betti numbers, 
 		but also the associated Schur functions. The advantage to this approach is twofold:
 		<ul>
