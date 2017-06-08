@@ -262,6 +262,9 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
   border-color: #ddd;
 }
 
+footer {
+    margin-top:20px;
+}
 /* 
 THESE ARE LIKELY NOT USED. DELETE THEM EVENTUALLY 
 .quickview-table{
