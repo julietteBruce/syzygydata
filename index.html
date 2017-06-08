@@ -19,25 +19,28 @@ description: SyzygyData, a project about computing syzygies.
 
 		In general such computations are quite difficult even for relatively small \(n\) and small \(d\).
 		For instance, when \(n=2\) and \(d\leq 3\), one can compute the entire Betti table
-		with paper and pencil or instantly via Macaulay2; when \(d=4\), Macaulay2 is takes roughly 30 seconds to compute the Betti table.
-		However, when \(d=5\) Macaulay2 fails to terminate, and was only recently computed via alternative methods.
+		with paper and pencil or instantly via Macaulay2. Likewise when \(d=4\), Macaulay2 is able to perform the computation
+		in roughly 30 seconds.
+		However, when \(d=5\) Macaulay2 fails to terminate, and this was only recently computed via alternative methods.
 		One cause of difficult with such computations is that the number of variables grows on the order of \(O(d^{n})\). 
 		This means the computational complexity ratchets up quite dramatically.
 		</br>
 		</br>
-		So to achieve our goal we approach the task of computing Betti numbers in a somewhat
-		novel fashion. First instead of using symbolic Gr&ouml;obner methods we approach the question
-		of computing graded Betti numbers via linear algebra seeking to explicitly compute the cohomology
-		of a particular chain complex. Along the way we rephrase the question slightly, seeking to compute multigraded Betti numbers,
-		so as to break the problem into a large number of (slightly) more tractable problems. This approach in itself is not new, 
-		and the community has long know that one could use linear algebra to compute syzygies. However, to our knowledge
-		until recently no one has made use of this approach, likely because in sum resulting problem is still quite daunting. 
+		So in order to achieve our goal we approach the task of computing Betti numbers in a somewhat
+		novel fashion. First instead of using symbolic Gr&ouml;obner methods we rely upon
+		 via linear algebra seeking to explicitly compute the cohomology
+		of a particular chain complex. Along the way we rephrase the question slightly, seeking to compute multigraded Betti numbers.
+		This takes break breaks massive (largely infeasible) computations into a huge number of (slightly) more tractable one. 
+		This approach in itself is not new. The community has long know that one could use linear algebra to compute syzygies. However, to our knowledge
+		until recently no one has made use of this approach, likely because the resulting computations is still quite daunting, both individually and in sum. 
 		(See the <a href="{{site.baseurl}}/background">Background</a> page for a more complete description.)
 		</br>
 		</br>
 		Second we create a framework to systematically perform such computations making use of high 
 		speed distributed computing and highly efficient sparse matrix algorithms. In large part the 
-		novelty of this project lies in this execution. (See the <a href="{{site.baseurl}}/approach">Approach</a> page for a more in-depth description of our methodology.)
+		novelty of this project lies in this execution. This framework makes use of the fact that
+		the necessary computations can be done independently of one another. So using HTCondor we are
+		able to distribute our computations across a wide pool of computers. (See the <a href="{{site.baseurl}}/approach">Approach</a> page for a more in-depth description of our methodology.)
 		</br>
 		</br>
 		While others [1] have recently implemented similar ideas regarding the computation of graded Betti numbers, our approach has a few additional benefits,
