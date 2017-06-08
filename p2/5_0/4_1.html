@@ -1,26 +1,33 @@
 ---
 layout: default
-cv: passive
-notes: passive
-contact: passive
-description: Syzygy Database
+title: P2/5-0/4-1
+description: Entry page from a betti table on SyzygyData
 ---
 
 <div class="container">
 
 <div class="col-md-6">
-	<div class="card card-fix card-outline-primary overview">
-		<div class="card-block">
-			<h4 class="card-title">n=2, d=5, b=0, p=4, q=1</h4>
-			<h6 class="card-subtitle mb-2 text-muted">Status: Completed (11/16/16)</h6>
-			<a href="#" class="btn btn-primary">M2 File</a>
-			<a href="#" class="btn btn-primary">All Data</a>
+<div class="panel panel-default">
+	<div class="panel-heading betti-key">Current Betti Table Entry:</div>
+	<div class="panel-body">
+		<div class="row text-center">
+			<div class="col-xs-4"><h4>\(n=2\)</h4></div>
+			<div class="col-xs-4"><h4>\(d=5\)</h4></div>
+			<div class="col-xs-4"><h4>\(b=0\)</h4></div>
 		</div>
+		<div class="row text-center">
+			<div class="col-xs-6"><h4>\(p=4\)</h4></div>
+			<div class="col-xs-6"><h4>\(q=1\)</h4></div>
 	</div>
+	</div>
+</div>
 </div>
 
 
 {% include_relative betti.html %}
+
+
+{% include_relative popover_4_1.html %}
 
 
 <div class="col-md-12">
@@ -30,32 +37,35 @@ description: Syzygy Database
 			<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Schur Decomposition</a>
-			</h4>			</div>
+			</h4>
+			</div>
 
-			<div id="collapse1" class="panel-collapse collapse in">
+			<div id="collapse1" class="panel-collapse collapse">
 			<div class="panel-body">
+			<p>Click on an entry for more information! The dominate weights are in green.</p>
 			<div class="table-responsive">
 
 			<table class="table-condensed mutli-schur">
 				<thead>
 				<tr class="betti-top">
 					<th class="betti-cols"></th>
-					<th class="betti-cols">8</th>
-					<th class="betti-cols">9</th>
-					<th class="betti-cols">10</th>
-					<th class="betti-cols">11</th>
-					<th class="betti-cols">12</th>
-					<th class="betti-cols">13</th>
-					<th class="betti-cols">14</th>
-					<th class="betti-cols">15</th>
-					<th class="betti-cols">16</th>
-					<th class="betti-cols">17</th>
-					<th class="betti-cols">18</th>
-					<th class="betti-cols">19</th>
+					<th>8</th>
+					<th>9</th>
+					<th>10</th>
+					<th>11</th>
+					<th>12</th>
+					<th>13</th>
+					<th>14</th>
+					<th>15</th>
+					<th>16</th>
+					<th>17</th>
+					<th>18</th>
+					<th>19</th>
 				</tr>
 				</thead>
 
-				<tbody>				<tr>
+				<tbody>
+				<tr>
 					<td class="betti-cols">3</td>
 					<td>&middot;</td>
 					<td>&middot;</td>
@@ -99,7 +109,7 @@ description: Syzygy Database
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-15-5-5">2</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-16-5-4">3</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-17-5-3">2</a>
-					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-18-5-2">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-success"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-18-5-2">1</a>
 					<td>&middot;</td>
 				</tr>
 
@@ -130,7 +140,7 @@ description: Syzygy Database
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-14-7-4">11</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-15-7-3">8</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-16-7-2">4</a>
-					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-17-7-1">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-success"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-17-7-1">1</a>
 					<td>&middot;</td>
 					<td>&middot;</td>
 				</tr>
@@ -191,7 +201,7 @@ description: Syzygy Database
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-11-11-3">3</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-12-11-2">4</a>
 					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-13-11-1">2</a>
-					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-14-11-0">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-success"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-14-11-0">1</a>
 					<td>&middot;</td>
 					<td>&middot;</td>
 					<td>&middot;</td>
@@ -244,40 +254,43 @@ description: Syzygy Database
 			<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Multigraded Decomposition</a>
-			</h4>			</div>
+			</h4>
+			</div>
 
-			<div id="collapse2" class="panel-collapse collapse in">
+			<div id="collapse2" class="panel-collapse collapse">
 			<div class="panel-body">
+			<p>Click on an entry for more information!</p>
 			<div class="table-responsive">
 
 			<table class="table-condensed mutli-schur">
 				<thead>
 				<tr class="betti-top">
 					<th class="betti-cols"></th>
-					<th class="betti-cols">0</th>
-					<th class="betti-cols">1</th>
-					<th class="betti-cols">2</th>
-					<th class="betti-cols">3</th>
-					<th class="betti-cols">4</th>
-					<th class="betti-cols">5</th>
-					<th class="betti-cols">6</th>
-					<th class="betti-cols">7</th>
-					<th class="betti-cols">8</th>
-					<th class="betti-cols">9</th>
-					<th class="betti-cols">10</th>
-					<th class="betti-cols">11</th>
-					<th class="betti-cols">12</th>
-					<th class="betti-cols">13</th>
-					<th class="betti-cols">14</th>
-					<th class="betti-cols">15</th>
-					<th class="betti-cols">16</th>
-					<th class="betti-cols">17</th>
-					<th class="betti-cols">18</th>
-					<th class="betti-cols">19</th>
+					<th>0</th>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>5</th>
+					<th>6</th>
+					<th>7</th>
+					<th>8</th>
+					<th>9</th>
+					<th>10</th>
+					<th>11</th>
+					<th>12</th>
+					<th>13</th>
+					<th>14</th>
+					<th>15</th>
+					<th>16</th>
+					<th>17</th>
+					<th>18</th>
+					<th>19</th>
 				</tr>
 				</thead>
 
-				<tbody>				<tr>
+				<tbody>
+				<tr>
 					<td class="betti-cols">0</td>
 					<td>&middot;</td>
 					<td>&middot;</td>
@@ -768,4 +781,5 @@ description: Syzygy Database
 	</div>
 </div>
 
+<p><br><br></p>
 </div>

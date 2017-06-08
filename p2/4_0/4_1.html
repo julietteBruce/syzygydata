@@ -7,7 +7,21 @@ description: Entry page from a betti table on SyzygyData
 <div class="container">
 
 <div class="col-md-6">
-<div class="panel panel-default">	<div class="panel-heading betti-key">Current Betti Table Entry:</div>	<div class="panel-body">		<div class="row text-center">			<div class="col-xs-4"><h4>\(n=2\)</h4></div>			<div class="col-xs-4"><h4>\(d=4\)</h4></div>			<div class="col-xs-4"><h4>\(b=0\)</h4></div>		</div>		<div class="row text-center">			<div class="col-xs-6"><h4>\(p=4\)</h4></div>			<div class="col-xs-6"><h4>\(q=1\)</h4></div>	</div>	</div></div></div>
+<div class="panel panel-default">
+	<div class="panel-heading betti-key">Current Betti Table Entry:</div>
+	<div class="panel-body">
+		<div class="row text-center">
+			<div class="col-xs-4"><h4>\(n=2\)</h4></div>
+			<div class="col-xs-4"><h4>\(d=4\)</h4></div>
+			<div class="col-xs-4"><h4>\(b=0\)</h4></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-6"><h4>\(p=4\)</h4></div>
+			<div class="col-xs-6"><h4>\(q=1\)</h4></div>
+	</div>
+	</div>
+</div>
+</div>
 
 
 {% include_relative betti.html %}
@@ -23,14 +37,12 @@ description: Entry page from a betti table on SyzygyData
 			<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Schur Decomposition</a>
-			</h4>			</div>
+			</h4>
+			</div>
 
 			<div id="collapse1" class="panel-collapse collapse">
 			<div class="panel-body">
 			<p>Click on an entry for more information! The dominate weights are in green.</p>
-			<div class="container-fluid">
-			<div class="row">
-			<div class="col-md-12">
 			<div class="table-responsive">
 
 			<table class="table-condensed mutli-schur">
@@ -49,7 +61,8 @@ description: Entry page from a betti table on SyzygyData
 				</tr>
 				</thead>
 
-				<tbody>				<tr>
+				<tbody>
+				<tr>
 					<td class="betti-cols">3</td>
 					<td>&middot;</td>
 					<td>&middot;</td>
@@ -155,9 +168,7 @@ description: Entry page from a betti table on SyzygyData
 
 				</tbody>
 			</table>
-			</div>
-			</div>
-			</div>
+
 			</div>
 			</div>
 			</div>
@@ -168,11 +179,12 @@ description: Entry page from a betti table on SyzygyData
 			<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Multigraded Decomposition</a>
-			</h4>			</div>
+			</h4>
+			</div>
 
 			<div id="collapse2" class="panel-collapse collapse">
 			<div class="panel-body">
-<p>Click on an entry for more information!</p>
+			<p>Click on an entry for more information!</p>
 			<div class="table-responsive">
 
 			<table class="table-condensed mutli-schur">
@@ -196,7 +208,8 @@ description: Entry page from a betti table on SyzygyData
 				</tr>
 				</thead>
 
-				<tbody>				<tr>
+				<tbody>
+				<tr>
 					<td class="betti-cols">1</td>
 					<td>&middot;</td>
 					<td>&middot;</td>
@@ -460,5 +473,4 @@ description: Entry page from a betti table on SyzygyData
 </div>
 
 <p><br><br></p>
-
 </div>
