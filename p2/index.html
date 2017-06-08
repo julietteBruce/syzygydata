@@ -7,71 +7,13 @@ description: P2 index on SyzygyData.
 <div class="container-fluid">
 
 <p><b>Syzygies of \(S(2,b;d)\):</b>
-	Click on the pair \((d,b)\) below to see the associated Betti tables. Green signifies we have a completed our computations, 
+	Click on the pair \((d,b)\) below to see the associated Betti tables or scroll to the bottom of this
+	page to see information regarding the relevant range of computation and ways we have verified our work.
+	 Green signifies we have a completed our computations, 
 	and have all the graded, multigraded, and Schur graded Betti numbers. Yellow indicates we have not yet finished 
 	(or in a few of the large cases started) our computations yet. Stay tuned!
 </p>
-
-<div class="panel-group" id="accordion">
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Relevant Range</a></h4>
-	</div>
-	<div id="collapse1" class="panel-collapse collapse">
-		<div class="panel-body">
-			<div class="col-md-12">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					<div class="row text-center">
-						<div class="col-xs-6"><h4>\(\text{reg} S(2,b;d)=\)</h4></div>
-						<div class="col-xs-6"><h4>\(\text{pd} S(2,b;d)=\)</h4></div>
-					</div>
-				</div>
-				</div>
-			</div>
-			</div>
-			
-			<p>The relevant range is the values of \(p\) for which the Betti numbers \(\beta_{p,q}(2,b;d)\) are not determined
-			solely by the multigraded Hilbert series of \(S(2,b;d)\). This is the range in which we must compute the multigraded 
-			Betti numbers by computing the ranks of the accompanying differentials.
-			</p>
-			
-			<p>For \(\mathbb{P}^{2}\) the relevant range can alternatively be characterized as the set \(p\) for
-			\(K_{p,q}(2,b;d)\neq0\) for multiple values of \(q\). In this a mixture of results (see 
-			<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark0">Rmk</a>)
-			gives the following precise non-vanishing results in the cases at hand:
-			\[K_{p,0}(2,b;d)\neq0 \quad \iff \quad 0\leq p\leq\binom{b+2}{2}-1\]
-			\[K_{p,q}(2,b;d)\neq0 \quad \iff \quad \binom{d+q}{q}-\binom{d-b-1}{q}-q\leq p\leq\binom{d+2}{2}-\binom{d+2-q}{2-q}+\binom{b+2}{n-q}-q-1 \quad \quad (q>0).\]
-			From this we find that the relevant range is:
-			</p>
-		</div>
-	</div>
-</div>
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Verifications</a></h4>
-	</div>
-	<div id="collapse2" class="panel-collapse collapse">
-		<div class="panel-body">
-			<p>Here we record ways in which our computations have been checked/verified:
-			<ul>
-				<li>For \(d\leq 4\) the graded, multigraded, and Schur graded Betti numbers of \(S(2,b;d)\) can be computed exactly 
-				via symbolic Gr&ouml;bner methods. Our computations agree with these.</li>
-				</li>
-				<li>For \(d=4\) and \(d=4\) the graded Betti numbers of \(S(2,0;d)\) were computed using a mixture of theoretical 
-				results and symbolic computations in [7]. Our computations agree with these.
-				</li>
-				<li> For \(d\leq 6\) the graded and multigraded Betti numbers of \(S(2,0;d)\) were computed via a similar
-				numerical approach (working over a finite field) in [1]. Our computations agree with these.
-				</li>
-			</ul>
-			</p>
-		</div>
-	</div>
-</div>
-</div>
-
-
+	
 <div class="table-responsive">          
 <table class="table">
 		<tr class="betti-top">
@@ -173,6 +115,67 @@ description: P2 index on SyzygyData.
 			<td class="warning"><a href="{{site.baseurl}}/p2/8_7">(8,7)</a></td>
 		</tr>	
 </table>
+</div>
+
+
+
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Relevant Range</a></h4>
+	</div>
+	<div id="collapse1" class="panel-collapse collapse">
+		<div class="panel-body">
+			<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row text-center">
+						<div class="col-xs-6"><h4>\(\text{reg} S(2,b;d)=2\)</h4></div>
+						<div class="col-xs-6"><h4>\(\text{pd} S(2,b;d)=\binom{d+2}{2}-2\)</h4></div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			
+			<p>The relevant range is the values of \(p\) for which the Betti numbers \(\beta_{p,q}(2,b;d)\) are not determined
+			solely by the multigraded Hilbert series of \(S(2,b;d)\). This is the range in which we must compute the multigraded 
+			Betti numbers by computing the ranks of the accompanying differentials.
+			</p>
+			
+			<p>For \(\mathbb{P}^{2}\) the relevant range can alternatively be characterized as the set \(p\) for
+			\(K_{p,q}(2,b;d)\neq0\) for multiple values of \(q\). In this a mixture of results (see 
+			<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark0">Rmk</a>)
+			gives the following precise non-vanishing results in the cases at hand:
+			\[K_{p,0}(2,b;d)\neq0 \quad \iff \quad 0\leq p\leq\binom{b+2}{2}-1\]
+			\[K_{p,q}(2,b;d)\neq0 \quad \iff \quad \binom{d+q}{q}-\binom{d-b-1}{q}-q\leq p\leq\binom{d+2}{2}-\binom{d+2-q}{2-q}+\binom{b+2}{n-q}-q-1 \quad \quad (q>0).\]
+			From this we find that the relevant range is:
+			</p>
+		</div>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Verifications</a></h4>
+	</div>
+	<div id="collapse2" class="panel-collapse collapse">
+		<div class="panel-body">
+			<p>Here we record ways in which our computations have been checked/verified:
+			<ul>
+				<li>For \(d\leq 4\) the graded, multigraded, and Schur graded Betti numbers of \(S(2,b;d)\) can be computed exactly 
+				via symbolic Gr&ouml;bner methods. Our computations agree with these.</li>
+				</li>
+				<li>For \(d=4\) and \(d=4\) the graded Betti numbers of \(S(2,0;d)\) were computed using a mixture of theoretical 
+				results and symbolic computations in [7]. Our computations agree with these.
+				</li>
+				<li> For \(d\leq 6\) the graded and multigraded Betti numbers of \(S(2,0;d)\) were computed via a similar
+				numerical approach (working over a finite field) in [1]. Our computations agree with these.
+				</li>
+			</ul>
+			</p>
+		</div>
+	</div>
+</div>
 </div>
 
 <div id="remark-0" class="hidden">
