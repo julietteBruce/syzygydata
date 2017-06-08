@@ -143,7 +143,7 @@ description: P2 index on SyzygyData.
 			<p>For \(\mathbb{P}^{2}\) the relevant range can alternatively be characterized as the set \(p\) for
 			\(K_{p,q}(2,b;d)\neq0\) for multiple values of \(q\). In this case
 			\[0\leq p\leq\binom{b+2}{2}-1\]
-			\[\binom{d+1}{1}-\binom{d-b-1}{1}-1\leq\binom{d+2}{2}-\binom{d+1}{1}+\binom{b+2}{1}-2\]
+			\[\binom{d+1}{1}-\binom{d-b-1}{1}-1\leq p\leq\binom{d+2}{2}-\binom{d+1}{1}+\binom{b+2}{1}-2\]
 			\[\binom{d+2}{2}-\binom{b-d-1}{2}-2\leq p \leq \binom{d+2}{2}-n-1 \]
 			</p>
 		</div>
@@ -155,6 +155,19 @@ description: P2 index on SyzygyData.
 	</div>
 	<div id="collapse2" class="panel-collapse collapse">
 		<div class="panel-body">
+			<p>Here we record ways in which our computations have been checked/verified:
+			<ul>
+				<li>For \(d\leq 4\) the exact graded, multigraded, and Schur graded Betti numbers of \(S(2,b;d)\) are computable 
+				via symbolic Gr&ouml;bner methods. Our computations agree with these.</li>
+				</li>
+				<li>For \(d=4\) and \(d=4\) the graded Betti numbers of \(S(2,0;d)\) were computed using a mixture of theoretical 
+				results and symbolic computations in [6.] Our computations agree with these.
+				</li>
+				<li> For \(d\leq 6\) the graded and multigraded Betti numbers of \(S(2,0;d)\) were computed via a similar
+				numerical approach (working over a finite field) in [1]. Our computations agree with these.
+				</li>
+			</ul>
+			</p>
 		</div>
 	</div>
 </div>
