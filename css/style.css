@@ -116,6 +116,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 
 .table-responsive {
     width: 100%;
+    height: 100%;
     margin-bottom: 15px;
     padding: 15px;
     overflow-x: auto;
