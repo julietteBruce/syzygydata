@@ -138,19 +138,21 @@ description: P2 index on SyzygyData.
 			</div>
 			</div>
 			
-			<p>The relevant range is the values of \(p\) for which the Betti numbers \(\beta_{p,q}(2,b;d)\) are not determined
+			<p>The relevant range is the values of \((p,q)\) for which the Betti numbers \(\beta_{p,q}(2,b;d)\) are non-zero and not determined
 			solely by the multigraded Hilbert series of \(S(2,b;d)\). This is the range in which we must compute the multigraded 
 			Betti numbers by computing the ranks of the accompanying differentials.
 			</p>
 			
-			<p>For \(\mathbb{P}^{2}\) the relevant range can alternatively be characterized as the set \(p\) for
-			\(K_{p,q}(2,b;d)\neq0\) for multiple values of \(q\). In this a mixture of results (see 
+			<p>For \(\mathbb{P}^{2}\) the relevant range can alternatively be characterized as the set of \((p,q)\) where
+			\(K_{p,q}(2,b;d)\neq0\) and \(K_{p-1,q+1}(2,b;d)\neq0\) or \(K_{p+1,q-1}(2,b;d)\neq0\). A mixture of various results (see 
 			<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark0">Rmk</a>)
-			gives the following precise non-vanishing results: 
-			\[K_{p,0}(2,b;d)\neq0 \quad \iff \quad 0\leq p\leq\binom{b+2}{2}-1,\]
-			and when \(q=1,2\) then \(K_{p,q}(2,b;d)\neq0\) if and only if
-			\[\binom{d+q}{q}-\binom{d-b-1}{q}-q\leq p\leq\binom{d+2}{2}-\binom{d+2-q}{2-q}+\binom{b+2}{2-q}-q-1.\]
-			From this we find that the relevant range is:
+			gives shows \([K_{p,q}(2,b;d)\neq0\) for all \(p\) in the following range:
+			\[
+			\binom{m+d}{d}-\binom{m+d-r-1}{m}-m\leq p \leq \binom{2+d}{2}+\binom{2-m+r}{2-m}-\binom{2-m+d}{2-m}-m-1
+			\]
+			where \(m\) and \(r\) are the quotient and remainder of \(qd+b\) divided by \(d-1\). As these bounds are 
+			known to be sharp they allow us to compute the relevant range easily. For example, if \(b=0\) and \(d=0\) 
+			the relevant range is \(\{(14,1), (15,1), (13,2), (14,2)\}\).
 			</p>
 		</div>
 	</div>

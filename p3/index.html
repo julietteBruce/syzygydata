@@ -85,12 +85,21 @@ description: P3 index on SyzygyData.
 			</div>
 			</div>
 			
-			<p>The relevant range is the values of \(p\) for which the Betti numbers \(\beta_{p,q}(3,b;d)\) are not determined
+			<p>The relevant range is the values of \((p,q)\) for which the Betti numbers \(\beta_{p,q}(3,b;d)\) are non-zero and not determined
 			solely by the multigraded Hilbert series of \(S(3,b;d)\). This is the range in which we must compute the multigraded 
 			Betti numbers by computing the ranks of the accompanying differentials.
 			</p>
 			
-			<p>For \(\mathbb{P}^{3}\) the relevant range can alternatively be characterized as...
+			<p>For \(\mathbb{P}^{3}\) the relevant range can alternatively be characterized as the set of \((p,q)\) where
+			\(K_{p,q}(3,b;d)\neq0\) and \(K_{p-1,q+1}(3,b;d)\neq0\), \(K_{p+1,q-1}(3,b;d)\neq0\),\(K_{p+2,q-2}(3,b;d)\neq0\), or \(K_{p-2,q+2}(3,b;d)\neq0\).
+			 A mixture of various results (see 
+			<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark0">Rmk</a>)
+			gives shows \([K_{p,q}(3,b;d)\neq0\) for all \(p\) in the following range:
+			\[
+			\binom{m+d}{d}-\binom{m+d-r-1}{m}-m\leq p \leq \binom{3+d}{2}+\binom{3-m+r}{3-m}-\binom{3-m+d}{3-m}-m-1
+			\]
+			where \(m\) and \(r\) are the quotient and remainder of \(qd+b\) divided by \(d-1\). Unlike in the case when
+			\(n=2\) these bounds are not known to be sharp, although they are conjectured to be.
 			</p>
 		</div>
 	</div>
