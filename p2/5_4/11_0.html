@@ -1,0 +1,940 @@
+---
+layout: default
+title: P2/5-4/11-0
+description: Entry page from a betti table on SyzygyData
+---
+
+<div class="container">
+
+<div class="col-md-6">
+<div class="panel panel-default">
+	<div class="panel-heading betti-key">Current Betti Table Entry:</div>
+	<div class="panel-body">
+		<div class="row text-center">
+			<div class="col-xs-4"><h4>\(n=2\)</h4></div>
+			<div class="col-xs-4"><h4>\(d=5\)</h4></div>
+			<div class="col-xs-4"><h4>\(b=4\)</h4></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-6"><h4>\(p=11\)</h4></div>
+			<div class="col-xs-6"><h4>\(q=0\)</h4></div>
+	</div>
+	</div>
+</div>
+</div>
+
+
+{% include_relative betti.html %}
+
+
+{% include_relative popover_11_0.html %}
+
+
+<div class="col-md-12">
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+
+			<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Schur Decomposition</a>
+			</h4>
+			</div>
+
+			<div id="collapse1" class="panel-collapse collapse">
+			<div class="panel-body">
+			<p>Below is a plot displaying the Schur decomposition. In the \(\lambda=(\lambda_0,\lambda_1)\) spot we place \(\beta_{11,\lambda}(2,4;5)\), the multiplicity of \(\textbf{S}_{\lambda}\) occuring in the decomposition of \(K_{11,0}(2,4;5)\). Here \(\lambda\) is the weight \((\lambda_0,\lambda_1,\lambda_2)\) where \(\lambda_2\) is determined by the fact that \(|\lambda|\) equals \(d(p+q)+b\). The dominate weights are displayed in green. Click on an entry for more info!</p>			<div class="table-responsive">
+
+			<table class="table-condensed mutli-schur">
+				<thead>
+				<tr class="betti-top">
+					<th class="betti-cols"></th>
+					<th>20</th>
+					<th>21</th>
+					<th>22</th>
+					<th>23</th>
+					<th>24</th>
+					<th>25</th>
+					<th>26</th>
+					<th>27</th>
+					<th>28</th>
+					<th>29</th>
+					<th>30</th>
+					<th>31</th>
+					<th>32</th>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td class="betti-cols">14</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">15</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-29-15-15">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-30-15-14">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-31-15-13">1</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">16</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-28-16-15">4</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-29-16-14">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-30-16-13">2</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">17</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-25-17-17">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-26-17-16">5</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-27-17-15">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-28-17-14">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-29-17-13">5</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-30-17-12">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-success"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-31-17-11">1</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">18</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-24-18-17">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-25-18-16">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-26-18-15">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-27-18-14">4</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-28-18-13">5</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-29-18-12">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-30-18-11">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">19</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-21-19-19">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-22-19-18">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-23-19-17">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-24-19-16">5</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-25-19-15">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-26-19-14">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-27-19-13">8</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-28-19-12">4</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-29-19-11">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-success"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-30-19-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">20</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-24-20-15">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-25-20-14">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-26-20-13">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-27-20-12">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-28-20-11">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">21</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-21-21-17">2</a>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-23-21-15">3</a>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-25-21-13">2</a>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-27-21-11">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">22</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">23</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-default"data-toggle="popover" data-trigger="focus"data-popover-content="#sh-23-23-13">2</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">24</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				</tbody>
+			</table>
+
+			</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+
+			<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Multigraded Decomposition</a>
+			</h4>
+			</div>
+
+			<div id="collapse2" class="panel-collapse collapse">
+			<div class="panel-body">
+			<p>Below is a plot displaying the multigraded Betti numbers. In the \((a_0,a_1)\) spot we place \(\beta_{11,\textbf{a}}(2,4;5)\). Here \(\textbf{a}\) is the weight \((a_0,a_1,a_2)\) where \(a_2\) is determined by the fact that \(|\textbf{a}|\) equals \(d(p+q)+b\). Entries with error corrected via our Schur decomposition algorithm are in orange. Click on an entry for more info!</p>
+			<div class="table-responsive">
+
+			<table class="table-condensed mutli-schur">
+				<thead>
+				<tr class="betti-top">
+					<th class="betti-cols"></th>
+					<th>10</th>
+					<th>11</th>
+					<th>12</th>
+					<th>13</th>
+					<th>14</th>
+					<th>15</th>
+					<th>16</th>
+					<th>17</th>
+					<th>18</th>
+					<th>19</th>
+					<th>20</th>
+					<th>21</th>
+					<th>22</th>
+					<th>23</th>
+					<th>24</th>
+					<th>25</th>
+					<th>26</th>
+					<th>27</th>
+					<th>28</th>
+					<th>29</th>
+					<th>30</th>
+					<th>31</th>
+					<th>32</th>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td class="betti-cols">10</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-10-30">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-10-29">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-10-28">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-10-27">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-10-26">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-10-25">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-10-24">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-10-23">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-10-22">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-10-21">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-10-20">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-10-19">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">11</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-11-31">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-11-30">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-11-29">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-11-28">8</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-11-27">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-11-26">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-11-25">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-11-24">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-11-23">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-11-22">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-11-21">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-11-20">8</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-11-19">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-11-18">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-31-11-17">1</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">12</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-12-31">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-12-30">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-12-29">13</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-12-28">22</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-12-27">25</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-12-26">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-12-25">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-12-24">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-12-23">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-12-22">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-12-21">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-12-20">25</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-12-19">22</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-12-18">13</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-12-17">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-31-12-16">1</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">13</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-13-31">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-13-30">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-13-29">24</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-13-28">41</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-13-27">60</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-13-26">65</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-13-25">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-13-24">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-13-23">70</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-13-22">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-13-21">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-13-20">65</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-13-19">60</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-13-18">41</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-13-17">24</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-13-16">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-31-13-15">2</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">14</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-14-31">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-14-30">11</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-14-29">30</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-14-28">61</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-14-27">92</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-14-26">120</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-14-25">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-14-24">131</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-14-23">133</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-14-22">133</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-14-21">131</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-14-20">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-14-19">120</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-14-18">92</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-14-17">61</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-14-16">30</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-14-15">11</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-31-14-14">2</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">15</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-15-31">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-15-30">11</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-15-29">35</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-15-28">74</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-15-27">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-15-26">175</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-15-25">215</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-15-24">224</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-15-23">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-15-22">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-15-21">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-15-20">224</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-15-19">215</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-15-18">175</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-15-17">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-15-16">74</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-15-15">35</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-15-14">11</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-31-15-13">2</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">16</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-16-31">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-16-30">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-16-29">30</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-16-28">74</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-16-27">136</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-16-26">211</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-16-25">272</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-16-24">318</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-16-23">332</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-16-22">338</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-16-21">338</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-16-20">332</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-16-19">318</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-16-18">272</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-16-17">211</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-16-16">136</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-16-15">74</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-16-14">30</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-16-13">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-31-16-12">1</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">17</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-17-31">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-17-30">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-17-29">24</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-17-28">61</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-17-27">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-17-26">211</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-17-25">306</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-17-24">375</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-17-23">432</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-17-22">444</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-17-21">452</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-17-20">444</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-17-19">432</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-17-18">375</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-17-17">306</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-17-16">211</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-17-15">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-17-14">61</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-17-13">24</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-17-12">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-31-17-11">1</a>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">18</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-18-30">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-18-29">13</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-18-28">41</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-18-27">92</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-18-26">175</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-18-25">272</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-18-24">375</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-18-23">455</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-18-22">511</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-18-21">525</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-18-20">525</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-18-19">511</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-18-18">455</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-18-17">375</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-18-16">272</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-18-15">175</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-18-14">92</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-18-13">41</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-18-12">13</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-18-11">3</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">19</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-19-30">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-19-29">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-19-28">22</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-19-27">60</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-19-26">120</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-19-25">215</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-19-24">318</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-19-23">432</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-19-22">511</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-19-21">572</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-19-20">578</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-19-19">572</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-19-18">511</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-19-17">432</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-19-16">318</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-19-15">215</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-19-14">120</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-19-13">60</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-19-12">22</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-19-11">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-30-19-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">20</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-20-29">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-20-28">8</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-20-27">25</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-20-26">65</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-20-25">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-20-24">224</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-20-23">332</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-20-22">444</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-20-21">525</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-20-20">578</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-20-19">578</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-20-18">525</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-20-17">444</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-20-16">332</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-20-15">224</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-20-14">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-20-13">65</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-20-12">25</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-20-11">8</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-29-20-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">21</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-21-28">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-21-27">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-21-26">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-21-25">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-21-24">131</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-21-23">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-21-22">338</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-21-21">452</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-21-20">525</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-21-19">572</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-21-18">525</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-21-17">452</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-21-16">338</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-21-15">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-21-14">131</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-21-13">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-21-12">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-21-11">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-28-21-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">22</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-22-27">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-22-26">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-22-25">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-22-24">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-22-23">133</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-22-22">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-22-21">338</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-22-20">444</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-22-19">511</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-22-18">511</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-22-17">444</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-22-16">338</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-22-15">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-22-14">133</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-22-13">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-22-12">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-22-11">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-27-22-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">23</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-23-26">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-23-25">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-23-24">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-23-23">70</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-23-22">133</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-23-21">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-23-20">332</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-23-19">432</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-23-18">455</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-23-17">432</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-23-16">332</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-23-15">232</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-23-14">133</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-23-13">70</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-23-12">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-23-11">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-26-23-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">24</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-24-25">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-24-24">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-24-23">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-24-22">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-24-21">131</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-24-20">224</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-24-19">318</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-24-18">375</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-24-17">375</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-24-16">318</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-24-15">224</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-24-14">131</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-24-13">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-24-12">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-24-11">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-25-24-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">25</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-25-24">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-25-23">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-25-22">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-25-21">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-25-20">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-25-19">215</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-25-18">272</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-25-17">306</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-25-16">272</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-25-15">215</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-25-14">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-25-13">68</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-25-12">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-25-11">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-24-25-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">26</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-26-23">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-26-22">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-26-21">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-26-20">65</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-26-19">120</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-26-18">175</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-26-17">211</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-26-16">211</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-26-15">175</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-26-14">120</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-26-13">65</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-26-12">26</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-26-11">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-23-26-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">27</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-27-22">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-27-21">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-27-20">25</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-27-19">60</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-27-18">92</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-27-17">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-27-16">136</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-27-15">128</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-27-14">92</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-27-13">60</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-27-12">25</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-27-11">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-22-27-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">28</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-28-21">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-28-20">8</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-28-19">22</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-28-18">41</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-28-17">61</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-28-16">74</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-28-15">74</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-28-14">61</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-28-13">41</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-28-12">22</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-28-11">8</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-21-28-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">29</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-29-20">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-29-19">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-29-18">13</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-29-17">24</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-29-16">30</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-29-15">35</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-29-14">30</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-29-13">24</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-29-12">13</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-29-11">7</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-20-29-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">30</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-10-30-19">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-30-18">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-30-17">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-30-16">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-30-15">11</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-30-14">11</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-30-13">9</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-30-12">6</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-18-30-11">3</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-19-30-10">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">31</td>
+					<td>&middot;</td>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-11-31-17">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-12-31-16">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-13-31-15">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-14-31-14">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-15-31-13">2</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-16-31-12">1</a>
+					<td><a tabindex="0" class="btn btn-xs btn-warning"data-toggle="popover" data-trigger="focus"data-popover-content="#mg-17-31-11">1</a>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				<tr>
+					<td class="betti-cols">32</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+					<td>&middot;</td>
+				</tr>
+
+				</tbody>
+			</table>
+
+			</div>
+			</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<p><br><br></p>
+</div>
