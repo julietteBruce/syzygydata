@@ -8,12 +8,12 @@ description: SyzygyData, a project about computing syzygies.
 	<p>
 	We approach the problem of computing syzygies of \(\mathbb{P}^n\) via computing the cohomology of the Koszul complex. Continuing
 	the notation from <a href="">Background</a> page \(K_{p,q}(n,b;d)\) may be computed as the cohomology of the complex:
-	\[\bigwedge^{p+1}S_{d}\otimes S_{b+(q-1)d}\xrightarrow[\quad \partial_{p+1} \quad]\bigwedge^{p}S_{d}\otimes S_{b+qd}\rightarrow[\quad \partial_{p} \quad]\bigwedge^{p-1}S_{d}\otimes S_{b+(q+1)d},\]
+	\[\bigwedge^{p+1}S_{d}\otimes S_{b+(q-1)d}\xrightarrow{\quad \partial_{p+1} \quad}\bigwedge^{p}S_{d}\otimes S_{b+qd}\rightarrow{\quad \partial_{p} \quad}\bigwedge^{p-1}S_{d}\otimes S_{b+(q+1)d},\]
 	where the differentials are given by
 	\[\partial_{p}(m_1\wedge m_2\wedge \cdots \wedge m_p\otimes f)=\sum_{k=1}^p(-1)^km_1\wedge m_2\wedge \cdots \wedge \hat{m}_{k}\wedge \cdots \wedge m_p\otimes(m_kf).\]
 	Note these differentials respect the \(\mathbb{Z}^{n+1}\)-grading on \(S\), and so the above complex may be decomposed into its
 	multigraded stands, and so we may compute \(K_{p,q}(n,b;d)_{\textbf{a}}\) via the cohomology of the following subcomplex:
-	\[\left(\bigwedge^{p+1}S_{d}\otimes S_{b+(q-1)d}\right)_{\textbf{a}}\xrightarrow[\quad \partial_{p+1,\textbf{a}} \quad]\left(\bigwedge^{p}S_{d}\otimes S_{b+qd}\right)_{\textbf{a}}\rightarrow[\quad \partial_{p,\textbf{a}} \quad]\left(\bigwedge^{p-1}S_{d}\otimes S_{b+(q+1)d}\right)_{\textbf{a}}.\]
+	\[\left(\bigwedge^{p+1}S_{d}\otimes S_{b+(q-1)d}\right)_{\textbf{a}}\xrightarrow{\quad \partial_{p+1,\textbf{a}} \quad}\left(\bigwedge^{p}S_{d}\otimes S_{b+qd}\right)_{\textbf{a}}\rightarrow{\quad \partial_{p,\textbf{a}} \quad}\left(\bigwedge^{p-1}S_{d}\otimes S_{b+(q+1)d}\right)_{\textbf{a}}.\]
 	Thus, computing the multigraded Betti numbers \(\beta_{p,\textbf{a}}(n,b;d)\) reduces to the linear algebra problem of computing
 	the ranks of \(\partial_{p+1,\textbf{a}}\) and \(\partial_{p+1,\textbf{a}}\). 
 	<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark-1">Rmk</a>
