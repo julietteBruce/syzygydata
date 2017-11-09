@@ -6,7 +6,8 @@ description: SyzygyData, a project about computing syzygies.
 <div class="container-fluid">
 
 	<p>
-	We approach the problem of computing syzygies of \(\mathbb{P}^n\) via computing the cohomology of the Koszul complex. Continuing
+	We approach the problem of computing syzygies of \(\mathbb{P}^n\) via numerical linear algebra and high throughput/performance computing. 
+	In particular, we compute the cohomology of the Koszul complex. Continuing
 	the notation from <a href="">Background</a> page \(K_{p,q}(n,b;d)\) may be computed as the cohomology of the complex:
 	\[\bigwedge^{p+1}S_{d}\otimes S_{b+(q-1)d}\xrightarrow{\quad \partial_{p+1} \quad}\bigwedge^{p}S_{d}\otimes S_{b+qd}\xrightarrow{\quad \partial_{p} \quad}\bigwedge^{p-1}S_{d}\otimes S_{b+(q+1)d},\]
 	where the differentials are given by
@@ -15,26 +16,13 @@ description: SyzygyData, a project about computing syzygies.
 	multigraded stands, and so we may compute \(K_{p,q}(n,b;d)_{\textbf{a}}\) via the cohomology of the following subcomplex:
 	\[\left(\bigwedge^{p+1}S_{d}\otimes S_{b+(q-1)d}\right)_{\textbf{a}}\xrightarrow{\quad \partial_{p+1,\textbf{a}} \quad}\left(\bigwedge^{p}S_{d}\otimes S_{b+qd}\right)_{\textbf{a}}\xrightarrow{\quad \partial_{p,\textbf{a}} \quad}\left(\bigwedge^{p-1}S_{d}\otimes S_{b+(q+1)d}\right)_{\textbf{a}}.\]
 	Thus, computing the multigraded Betti numbers \(\beta_{p,\textbf{a}}(n,b;d)\) reduces to the linear algebra problem of computing
-	the ranks of \(\partial_{p+1,\textbf{a}}\) and \(\partial_{p+1,\textbf{a}}\). 
-	<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark-1">Rmk</a>
-
-	We denote the \(k\)th graded piece of \(S\) by \(S_k\). Now for any \(b\in \mathbb{Z}\) and \(d\in\mathbb{N}\) we let
-	\[ S(b;d):= \bigoplus_{k\in \mathbb{Z}}S_{dk+b}\subset S\]
-	which we think of as an \(R=\text{Sym}(S_d)\)-module. Notice that \(S(b;d)\) corresponds to the pushforward of the 
-	sheaf \(\mathcal{O}_{\mathbb{P}^2}(b)\) by the \(d\)'uple embedding of \(\mathbb{P}^n\).
-	</p>
-	
-	</p>
-	Understanding the Betti numbers of \(S(b;d)\) amounts, in essence, to understanding \(\text{Tor}_{p}^{R}(S(b;d),\mathbb{C})\)
-	as a graded \(R\)-module. Usually by "graded" one means the \(\mathbb{Z}\) these \(\text{Tor}\) modules inherit from the 
-	standard grading on \(S\). However, in our work there turns out to be three different, although related, gradings we find it
-	fruitful to consider. We briefly describe each below:
+	the ranks of \(\partial_{p+1,\textbf{a}}\) and \(\partial_{p+1,\textbf{a}}\). With this in mind our computation can roughly be broken down into three steps.
 	</p>
 	
 	<div class="panel-group" id="accordion">
   		<div class="panel panel-default">
     		<div class="panel-heading">
-      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Standard Decomposition</a></h4>
+      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Pre-Computation</a></h4>
     		</div>
     		<div id="collapse1" class="panel-collapse collapse">
       		<div class="panel-body">
@@ -57,7 +45,7 @@ description: SyzygyData, a project about computing syzygies.
   		
   		<div class="panel panel-default">
     		<div class="panel-heading">
-      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Schur Decomposition</a></h4>
+      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Main Computation</a></h4>
     		</div>
     		<div id="collapse2" class="panel-collapse collapse">
       		<div class="panel-body">
@@ -78,7 +66,7 @@ description: SyzygyData, a project about computing syzygies.
   		
   		<div class="panel panel-default">
     		<div class="panel-heading">
-      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Multigraded Decomposition</a></h4>
+      		<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Post-Processing</a></h4>
     		</div>
     		<div id="collapse3" class="panel-collapse collapse">
       		<div class="panel-body">
@@ -96,53 +84,12 @@ description: SyzygyData, a project about computing syzygies.
     		</div>
   		</div>
 	</div>
-
-	<p>Note that the multigraded Betti numbers determine both the standard and Schur graded Betti numbers. For example, 
-	we can recover the standard graded Betti numbers from the multigraded via the following formula:
-	\[
-	\beta_{p,q}(n,b;d)=\sum_{|\textbf{a}|=d(p+q)+b}\beta_{p,\textbf{a}}(n,b;d).
-	\]
-	Recovering the Schur graded Betti numbers is slightly more complicated, but an algorithm for doing so can be found in the
-	accompanying paper. Hence the largest part of our computations are focused on computing the multigraded Betti numbers. See
-	<a href="{{site.baseurl}}/approach">Approach</a> page for a discussion of how we go about this.
 	
 	
 	
-<div id="remark-1" class="hidden">
-	<div class="popover-body">
-		<p>Note essentially all of what follows holds over any algebraically closed field of characteristic. Our choice
-		of working ovr \(\mathbb{C}\) is simply one of connivence. </p>
-	</div>
-</div>
-
-<div id="remark0" class="hidden">
-	<div class="popover-body">
-		<p>For notational hygiene we also often write \(K_{p,q}(n,b;d)\) for \(K_{p,q}(S(b;d))\), and likewise write
-	\(\beta_{p,q}(n,b;d)\) for \(\beta_{p,q}(S(b;d))\).</p>
-	</div>
-</div>
-
-<div id="remark1" class="hidden">
-	<div class="popover-body">
-		<p>Recall that we can think of a grading of a ring/module as a decomposition into irreducible 
-		representations arising from some group action. For example, the standard grading on \(S\) 
-		can be thought of coming from the natural \(\textbf{k}^*\).</p>
-	</div>
-</div>
-
-<div id="remark2" class="hidden">
-	<div class="popover-body">
-		<p>Recall the weight of an element \(\lambda\in \mathbb{Z}^{n+1}\) is defined to be \(|\lambda|=\lambda_0+\lambda_1+\cdots+
-		\lambda_n\).</p>
-	</div>
-</div>
-
-<div id="remark3" class="hidden">
-	<div class="popover-body">
-		<p>Notice that if \(\beta_{p,\textbf{a}}(n,b;d)\neq0\) then \(\textbf{a}\) must have
-		weight \(d(p+q)+b\).</p>
-	</div>
-</div>
+	
+	
+	<a tabindex="0" class="btn btn-xs btn-info"data-toggle="popover" data-trigger="focus"data-popover-content="#remark-1">Rmk</a>
 
 
 
