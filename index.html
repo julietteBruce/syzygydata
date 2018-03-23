@@ -5,56 +5,70 @@ description: SyzygyData, a project about computing syzygies.
 ---
 <div class="container-fluid">
 
-	<p>A central open question in the study of syzygies is to describe the Betti
-		table of \(\mathbb{P}^{n}\) under the degree \(d\) Veronese embedding. While
-		the case when \(n=1\) is fully understood and classical &mdash; the minimal resolution is 
-		given by an Eagon-Northcott complex &mdash; in higher dimensions this problem is almost entirely
-		open. For example, when \(n=2\), not only is a complete description unknown, but only a handful
-		of examples have ever been computed.
-		
-		<p class="lead">The goal of this project is to use numerical linear algebra and high speed
-		massively distributed computing to systematically gather new examples of Betti
-		tables of Veronese embeddings of \(\mathbb{P}^n\).
-		</p>
+	<p>A central open question in the study of syzygies is to describe the
+Betti table of \(\mathbb{P}^{n}\) under the degree \(d\) Veronese
+embedding. While the case when \(n=1\) is fully understood and classical
+&mdash; the minimal resolution is given by an Eagon-Northcott complex
+&mdash; in higher dimensions this problem is almost entirely open. For
+example, when \(n=2\), not only is a complete description unknown, but
+only a handful of examples have ever been computed. <p class="lead">The
+goal of this project is to use numerical linear algebra and high
+throughput, distributed computing to systematically gather new examples
+of Betti tables of Veronese embeddings of \(\mathbb{P}^n\).
+</p>
 
-		In general such computations are quite difficult even for relatively small \(n\) and small \(d\).
-		For instance, when \(n=2\) and \(d\leq 3\), one can compute the entire Betti table
-		with paper and pencil or instantly via Macaulay2. Likewise, when \(d=4\), Macaulay2 is able to perform the computation
-		in roughly 30 seconds.
-		However, when \(d=5\), Macaulay2 fails to terminate, and this was only recently computed via alternative methods.
-		One cause of difficult with such computations is that the number of variables grows on the order of \(O(d^{n})\). 
-		This means the computational complexity ratchets up quite dramatically.
-		</br>
-		</br>
-		In order to achieve our goal we approach the task of computing Betti numbers in a somewhat
-		novel fashion. First instead of using symbolic Gr&ouml;bner methods we rely upon
-		linear algebra seeking to explicitly compute the cohomology
-		of the Koszul complex. Along the way we rephrase the question slightly, seeking to compute multigraded Betti numbers.
-		This breaks massive (largely infeasible) computations into a huge number of (slightly) more tractable one. 
-		This approach in itself is not new. The community has long known that one could use linear algebra to compute syzygies. However, to our knowledge
-		until recently no one has made use of this approach, likely because the resulting computations are still quite daunting, both individually and in sum. 
-		(See the <a href="{{site.baseurl}}/background">Background</a> page for a more complete description.)
-		</br>
-		</br>
-		Second we create a framework to systematically perform such computations making use of high 
-		speed distributed computing and highly efficient sparse matrix algorithms. In large part the 
-		novelty of this project lies in this execution. This framework makes use of the fact that
-		the necessary computations can be done independently of one another. So using HTCondor we are
-		able to distribute our computations across a wide pool of computers. (See the <a href="{{site.baseurl}}/approach">Approach</a> page for a more in-depth description of our methodology.)
-		</br>
-		</br>
-		While others [1] have recently implemented similar ideas regarding the computation of graded Betti numbers, our approach has a few additional benefits,
-		one being that in addition to computing the graded Betti numbers we also compute the corresponding Schur functor decomposition. 
-		As \(d\) increases the graded and multigraded Betti numbers of the Veronese embedding grow quickly, 
-		becoming so large and numerous as to be difficult to work with. 
-		In particular, the size of the individual Betti numbers &mdash; in the hundreds of millions &mdash; obscures much of the underlying structure and any patterns. However, packaging this data via the associated Schur functors 
-		makes the data easier to work with.
-		</br>
-		</br>
-		Our belief in generating this experimental data is that it will lead to new conjectures, and verify existing ones, about the syzygies of Veroneses. (See the <a href="{{site.baseurl}}/conjectures">Conjectures</a> page for a list of conjectures and questions we have raised.) 
-		Thus we are content working with numerical algorithms, despite the potential for accidentally rounding a minuscule value down to zero. 
-		(Note: Our Schur functors methods allow us to catch and correct most small rounding errors. See Our Approach for further description.)
-		</p>	
+In general such computations are quite difficult even for relatively
+small \(n\) and small \(d\). For instance, when \(n=2\) and \(d\leq 3\),
+one can compute the entire Betti table with paper and pencil or
+instantly via Macaulay2. Likewise, when \(d=4\), Macaulay2 performed the
+computation on a standard laptop in roughly 30 seconds. However, when
+\(d=5\), Macaulay2 fails to terminate (as tested on a standard laptop in
+2016) , and this case was only recently computed, using alternate
+methods, in the 2016 work of Castryck-Cools-Demeyer-Lemmens (available
+<a href="https://arxiv.org/abs/1606.08181">here</a>.) The central cause
+of difficulty in these computations is that the number of variables
+grows on the order of \(O(d^{n})\), and thus the computational
+complexity ratchets up dramatically.
+</br>
+</br>
+Our computation is based on the synthesis of known results and the
+coordinated execution of many elementary steps. Instead of using
+symbolic Gr&ouml;bner methods to compute a free resolution, we use
+linear algebra to compute the cohomology of the Koszul complex. 
+Separating the Koszul complex into its multigraded strands allows us to
+break a (largely infeasible) Gr&ouml;bner computation into a huge number
+of more tractable computations.  (See the <a
+href="/background">Background</a> page for a more complete description.)
+While the theory behind this approach is not new, the only other effort
+at implementing on a large scale is the 2016 work
+Castryck-Cools-Demeyer-Lemmens.    This is likely because, even for
+relatively simple cases, the problem remains quite complicated; the
+matrices quickly become massive and numerous. 
+</br>
+</br>
+The crux of our technique is the use of high-speed high-throughput computing to compute
+multigraded Betti numbers. This allows us to compute each multigraded Betti number in
+parallel, relying on numerical linear algebra algorithms, in particular an LU-decomposition
+algorithm. These algorithms are numerical in nature, and so rounding errors may
+creep in. However, our primary interest is in the testing and development of conjectures,
+so we do not require the precision of symbolic computation. 
+See the <a href="/approach">Approach</a> page for a more in-depth description of our methodology.
+</br>
+</br>
+In addition to computing the graded and multigraded Betti numbers, we
+also compute the corresponding Schur functor decomposition, which is the
+most concise way the syzygy data data.  We also include some auxiliary
+statistics, like the number of distinct irreducible representations for
+each graded Betti number.
+</br>
+</br>
+Our belief in generating this experimental data is that it will lead to
+new conjectures, and verify existing ones, about the syzygies of
+Veroneses. See the <a href="/conjectures">Conjectures</a> page for a
+list of conjectures and questions we have raised. (Note: Schur functors
+methods allow us to catch and correct small rounding errors. See Our
+Approach for further description.)
+</p>
 		
 	
 </div>
